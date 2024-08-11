@@ -24,8 +24,6 @@
   .logo-container {
     display: flex;
     align-items: center;
-    background-color: none;
-    border: none;
     background-color: rgb(18, 18, 18);
     border: 1px rgb(18, 18, 18) solid;
     border-radius: 10px;
@@ -154,8 +152,6 @@
   .logo-container {
     display: flex;
     align-items: center;
-    background-color: none;
-    border: none;
     background-color: rgb(18, 18, 18);
     border: 1px rgb(18, 18, 18) solid;
     border-radius: 10px;
@@ -270,8 +266,6 @@
   .logo-container {
     display: flex;
     align-items: center;
-    background-color: none;
-    border: none;
     background-color: rgb(18, 18, 18);
     border: 1px rgb(18, 18, 18) solid;
     border-radius: 10px;

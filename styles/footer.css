@@ -1,0 +1,161 @@
+footer {
+  margin-top: auto;
+  border: 1px rgb(39, 39, 39) solid;
+  background-color: rgb(18, 18, 18);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.connect span {
+  margin-right: 10px;
+}
+
+.email {
+  display: flex;
+  background-color: rgb(35, 35, 35);
+  border-radius: 10px;
+  border: 1px rgb(39, 39, 39) solid;
+  transition: all 0.3s;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 8px 10px;
+}
+
+.email h4 {
+  font-weight: normal;
+}
+
+.email:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgb(51, 51, 51);
+}
+
+.info h2 {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.info hr {
+  border: 1px rgb(39, 39, 39) solid;
+  border-radius: 100px;
+  width: 100%;
+}
+
+.message-button {
+  background-color: rgb(35, 35, 35);
+  border-radius: 10px;
+  border: 1px rgb(39, 39, 39) solid;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 8px 10px;
+  transition: all 0.3s;
+  font-size: 16px;
+}
+
+.chat-icon {
+  margin-right: 10px;
+}
+
+.message-button:hover {
+  background-color: rgb(51, 51, 51);
+  color: rgba(255, 255, 255, 1);
+}
+
+.message-text span{
+  font-size: 26px;
+  display: block;
+}
+
+.message-button:hover span,
+.email:hover span {
+  scale: 1.1;
+}
+
+.connect h4 {
+  margin: 4px 0px;
+}
+
+@media (min-width:600px) and (max-width: 768px) {
+  .message-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+
+  .message-button {
+    padding: 10px 12px
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .message-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+
+  .message-button {
+    padding: 12px
+  }
+
+  .info h2{
+    font-size: 38px;
+  }
+
+  .message-text span{
+    font-size: 28px;
+  }
+
+  .email h4{
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .connect {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+  .message-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+
+  .message-button {
+    padding: 12px
+  }
+
+  .info h2{
+    font-size: 54px;
+  }
+
+  .message-text span{
+    font-size: 36px;
+  }
+
+  .email h4{
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .connect {
+    font-size: 24px;
+  }
+}

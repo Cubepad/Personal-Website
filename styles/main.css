@@ -1,0 +1,94 @@
+body {
+  position: relative;
+  background-color: rgb(18, 18, 18);
+  color: white;
+  background-image: url(../portfolio-background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  min-width: 320px;
+  max-width: 1200x;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: Inter, Arial, sans-serif;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translate(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate(0);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hidden {
+    transition: all 1s;
+  }
+}
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 120px 0px 0px 0px;
+    margin: 0px 10px 0px 10px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 769px) and (max-width:1024px) {
+  body {
+    padding: 120px 0px 0px 0px;
+    margin: 0px 60px 0px 60px;
+  }
+
+  h1 {
+    font-size: 62px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+  body {
+    padding: 120px 0px 0px 0px;
+    margin: 0px 120px 0px 120px;
+  }
+}
+
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 100px;
+}

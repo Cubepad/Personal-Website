@@ -5,14 +5,14 @@
     top: 20px;
     left: 10px;
     right: 10px;
-    border: 1px rgb(39, 39, 39) solid;
+    border: 1px var(--border-color) solid;
     border-radius: 20px;
     padding: 12px;
     display: flex;
     justify-content: space-between;
     z-index: 100;
     backdrop-filter: saturate(180%) blur(20px);
-    background-color: rgba(18, 18, 18, 0.7);
+    background-color: var(--header-background-color);
     transition: all 0.3s;
   }
   
@@ -24,30 +24,30 @@
   .logo-container {
     display: flex;
     align-items: center;
-    background-color: rgb(18, 18, 18);
-    border: 1px rgb(18, 18, 18) solid;
+    background-color: var(--background-color);
+    border: 1px var(--background-color) solid;
     border-radius: 10px;
     padding: 8px 6px;
     transition: all 0.3s;
   }
   
   .logo-container:hover {
-    background-color: rgb(35, 35, 35);
-    border: 1px rgb(39, 39, 39) solid;
+    background-color: var(--button-background-color);
+    border: 1px var(--border-color) solid;
   }
   
   .menu-icon {
     font-size: 48px;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--button-text-color);
     transition: color 0.3s;
     user-select: none;
 }
   
   .menu-button {
-    background-color: rgb(35, 35, 35);
+    background-color: var(--button-background-color);
     transition: background-color 1s;
     border-radius: 10px;
-    border: 1px rgb(39, 39, 39) solid;
+    border: 1px var(--border-color) solid;
     transition: background-color 0.3s;
     cursor: pointer;
     right: 0;
@@ -57,7 +57,7 @@
   }
   
   .menu-button:hover .menu-icon {
-    color: rgba(255, 255, 255, 1);
+    color: var(--title-color);
   }
   
   .right-section {
@@ -71,12 +71,12 @@
     opacity: 0;
     transform: translateY(-10px);
     position: absolute;
-    background-color: rgb(35, 35, 35);
+    background-color: var(--button-background-color);
     z-index: 1;
     right: 0;
     top: 75px;
     border-radius: 10px;
-    border: 1px rgb(39, 39, 39) solid;
+    border: 1px var(--border-color) solid;
     padding: 6px;
     width: 200px;
     transition: all 0.3s;
@@ -90,7 +90,7 @@
     text-decoration: none;
     border-radius: 10px;
     transition: all 0.3s;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--button-text-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,8 +101,8 @@
   }
   
   .dropdown-content a:hover {
-    background-color: rgb(51, 51, 51);
-    color: rgba(255, 255, 255, 1);
+    background-color: var(--button-hover);
+    color: var(--title-color);
   }
 
 
@@ -117,7 +117,7 @@
   }
 
   .right-section:focus-within .menu-icon {
-    color: rgba(255, 255, 255, 1);
+    color: var(--title-color);
   }
 }
 
@@ -132,15 +132,15 @@
     top: 20px;
     left: 40px;
     right: 40px;
-    background-color: rgb(18, 18, 18);
-    border: 1px rgb(39, 39, 39) solid;
+    background-color: var(--background-color);
+    border: 1px var(--border-color) solid;
     border-radius: 20px;
     padding: 12px;
     display: flex;
     justify-content: space-between;
     z-index: 100;
     backdrop-filter: saturate(180%) blur(20px);
-    background-color: rgba(18, 18, 18, 0.7);
+    background-color: var(--header-background-color);
     transition: all 0.3s;
   }
   
@@ -152,29 +152,29 @@
   .logo-container {
     display: flex;
     align-items: center;
-    background-color: rgb(18, 18, 18);
-    border: 1px rgb(18, 18, 18) solid;
+    background-color: var(--background-color);
+    border: 1px var(--background-color) solid;
     border-radius: 10px;
     padding: 8px 6px;
     transition: all 0.3s;
   }
   
   .logo-container:hover {
-    background-color: rgb(35, 35, 35);
-    border: 1px rgb(39, 39, 39) solid;
+    background-color: var(--button-background-color);
+    border: 1px var(--border-color) solid;
   }
   
   .menu-icon {
     font-size: 48px;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--button-text-color);
     transition: color 0.3s;
   }
   
   .menu-button {
-    background-color: rgb(35, 35, 35);
+    background-color: var(--button-background-color);
     transition: background-color 1s;
     border-radius: 10px;
-    border: 1px rgb(39, 39, 39) solid;
+    border: 1px var(--border-color) solid;
     transition: background-color 0.3s;
     cursor: pointer;
     right: 0;
@@ -185,7 +185,7 @@
   }
   
   .menu-button:hover .menu-icon {
-    color: rgba(255, 255, 255, 1);
+    color: var(--title-color);
   }
   
   .right-section {
@@ -196,17 +196,17 @@
   
   .dropdown-content {
     position: absolute;
-    background-color: rgb(35, 35, 35);
+    background-color: var(--button-background-color);
     z-index: 1;
     height: 38px;
     right: 0;
     top: 0;
     border-radius: 10px;
-    border: 1px rgb(39, 39, 39) solid;
+    border: 1px var(--border-color) solid;
     padding: 6px;
     transition: all 0.3s;
     display: flex;
-    background-color: rgb(18, 18, 18);
+    background-color: var(--background-color);
     gap: 6px;
   }
   
@@ -214,7 +214,7 @@
     text-decoration: none;
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--button-text-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -226,8 +226,8 @@
   }
   
   .dropdown-content a:hover {
-    background-color: rgb(51, 51, 51);
-    color: rgba(255, 255, 255, 1);
+    background-color: var(--button-hover);
+    color: var(--title-color);
   }
 
   .dropdown-content a:hover span{
@@ -246,15 +246,15 @@
     top: 20px;
     left: 60px;
     right: 60px;
-    background-color: rgb(18, 18, 18);
-    border: 1px rgb(39, 39, 39) solid;
+    background-color: var(--background-color);
+    border: 1px var(--border-color) solid;
     border-radius: 20px;
     padding: 12px;
     display: flex;
     justify-content: space-between;
     z-index: 100;
     backdrop-filter: saturate(180%) blur(20px);
-    background-color: rgba(18, 18, 18, 0.7);
+    background-color: var(--header-background-color);
     transition: all 0.3s;
   }
   
@@ -266,29 +266,29 @@
   .logo-container {
     display: flex;
     align-items: center;
-    background-color: rgb(18, 18, 18);
-    border: 1px rgb(18, 18, 18) solid;
+    background-color: var(--background-color);
+    border: 1px var(--background-color) solid;
     border-radius: 10px;
     padding: 8px 6px;
     transition: all 0.3s;
   }
   
   .logo-container:hover {
-    background-color: rgb(35, 35, 35);
-    border: 1px rgb(39, 39, 39) solid;
+    background-color: var(--button-background-color);
+    border: 1px var(--border-color) solid;
   }
   
   .menu-icon {
     font-size: 48px;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--button-text-color);
     transition: color 0.3s;
   }
   
   .menu-button {
-    background-color: rgb(35, 35, 35);
+    background-color: var(--button-background-color);
     transition: background-color 1s;
     border-radius: 10px;
-    border: 1px rgb(39, 39, 39) solid;
+    border: 1px var(--border-color) solid;
     transition: background-color 0.3s;
     cursor: pointer;
     right: 0;
@@ -299,7 +299,7 @@
   }
   
   .menu-button:hover .menu-icon {
-    color: rgba(255, 255, 255, 1);
+    color: var(--title-color);
   }
   
   .right-section {
@@ -310,13 +310,13 @@
   
   .dropdown-content {
     position: absolute;
-    background-color: rgb(35, 35, 35);
+    background-color: var(--button-background-color);
     z-index: 1;
     height: 38px;
     right: 0;
     top: 0;
     border-radius: 10px;
-    border: 1px rgb(39, 39, 39) solid;
+    border: 1px var(--border-color) solid;
     padding: 6px;
     transition: all 0.3s;
     display: flex;
@@ -327,7 +327,7 @@
     text-decoration: none;
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--button-text-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -339,8 +339,8 @@
   }
   
   .dropdown-content a:hover {
-    background-color: rgb(51, 51, 51);
-    color: rgba(255, 255, 255, 1);
+    background-color: var(--button-hover);
+    color: var(--title-color);
   }
 
   .dropdown-content a:hover span{

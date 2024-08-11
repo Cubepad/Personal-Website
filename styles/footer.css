@@ -1,7 +1,7 @@
 footer {
   margin-top: auto;
-  border: 1px rgb(39, 39, 39) solid;
-  background-color: rgb(18, 18, 18);
+  border: 1px var(--border-color) solid;
+  background-color: var(--background-color);
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
@@ -19,12 +19,12 @@ footer {
 
 .email {
   display: flex;
-  background-color: rgb(35, 35, 35);
+  background-color: var(--button-background-color);
   border-radius: 10px;
-  border: 1px rgb(39, 39, 39) solid;
+  border: 1px var(--border-color) solid;
   transition: all 0.3s;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--button-text-color);
   padding: 8px 10px;
 }
 
@@ -33,8 +33,8 @@ footer {
 }
 
 .email:hover {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgb(51, 51, 51);
+  color: var(--title-color);
+  background-color: var(--button-hover);
 }
 
 .info h2 {
@@ -43,21 +43,21 @@ footer {
 }
 
 .info hr {
-  border: 1px rgb(39, 39, 39) solid;
+  border: 1px var(--border-color) solid;
   border-radius: 100px;
   width: 100%;
 }
 
 .message-button {
-  background-color: rgb(35, 35, 35);
+  background-color: var(--button-background-color);
   border-radius: 10px;
-  border: 1px rgb(39, 39, 39) solid;
+  border: 1px var(--border-color) solid;
   transition: all 0.3s;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--button-text-color);
   padding: 8px 10px;
   transition: all 0.3s;
   font-size: 16px;
@@ -68,8 +68,8 @@ footer {
 }
 
 .message-button:hover {
-  background-color: rgb(51, 51, 51);
-  color: rgba(255, 255, 255, 1);
+  background-color: var(--button-hover);
+  color: var(--title-color);
 }
 
 .message-text span{

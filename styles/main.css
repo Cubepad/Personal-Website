@@ -42,9 +42,13 @@ html {
   --title-color: rgb(38, 38, 38);
   --text-color: rgba(0, 0, 0, 0.85);
   --button-text-color: rgba(0, 0, 0, 0.75);
-  --button-hover: rgb(210, 210, 210); 
+  --button-hover: rgb(210, 210, 210);
   --header-background-color: rgba(240, 240, 240, 0.9);
-  --background-img: radial-gradient(circle, rgb(248, 248, 248), rgb(200, 200, 200));
+  --background-img: radial-gradient(
+    circle,
+    rgb(248, 248, 248),
+    rgb(200, 200, 200)
+  );
 }
 
 .hidden {
@@ -66,7 +70,6 @@ html {
   }
 }
 
-
 @media (max-width: 768px) {
   body {
     padding: 120px 0px 0px 0px;
@@ -78,7 +81,7 @@ html {
   }
 }
 
-@media (min-width: 769px) and (max-width:1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   body {
     padding: 120px 0px 0px 0px;
     margin: 0px 6%;
@@ -101,11 +104,7 @@ html {
 }
 
 .material-symbols-rounded {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
 h1,

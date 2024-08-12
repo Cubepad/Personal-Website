@@ -57,8 +57,7 @@
   display: flex;
 }
 
-
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .about-me-flexbox {
     display: flex;
     flex-direction: column;
@@ -97,7 +96,7 @@
     justify-content: center;
   }
 
-  .about-me-text-div div{
+  .about-me-text-div div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,7 +115,6 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-
   .about-me-flexbox {
     display: flex;
     align-items: center;
@@ -153,11 +151,11 @@
     justify-content: center;
   }
 
-  .about-me-text-div h3{
+  .about-me-text-div h3 {
     font-size: 24px;
   }
 
-  .about-me-text-div div{
+  .about-me-text-div div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,7 +180,6 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1920px) {
-
   .about-me-flexbox {
     display: flex;
     align-items: center;
@@ -219,7 +216,7 @@
     justify-content: center;
   }
 
-  .about-me-text-div h3{
+  .about-me-text-div h3 {
     font-size: 32px;
   }
 
@@ -234,7 +231,7 @@
     font-size: 40px;
   }
 
-  .about-me-text-div div{
+  .about-me-text-div div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -258,7 +255,6 @@
 }
 
 @media (min-width: 1921px) {
-
   .about-me-flexbox {
     display: flex;
     align-items: center;
@@ -295,7 +291,7 @@
     justify-content: center;
   }
 
-  .about-me-text-div h3{
+  .about-me-text-div h3 {
     font-size: 36px;
   }
 
@@ -310,7 +306,7 @@
     font-size: 48px;
   }
 
-  .about-me-text-div div{
+  .about-me-text-div div {
     display: flex;
     flex-direction: column;
     align-items: center;

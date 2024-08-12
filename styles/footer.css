@@ -71,7 +71,7 @@ footer {
   color: var(--title-color);
 }
 
-.message-text span{
+.message-text span {
   font-size: 26px;
   display: block;
 }
@@ -85,7 +85,7 @@ footer {
   margin: 4px 0px;
 }
 
-@media (min-width:600px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
   .message-container {
     display: flex;
     justify-content: space-between;
@@ -94,10 +94,9 @@ footer {
   }
 
   .message-button {
-    padding: 10px 12px
+    padding: 10px 12px;
   }
 }
-
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .message-container {
@@ -108,18 +107,18 @@ footer {
   }
 
   .message-button {
-    padding: 12px
+    padding: 12px;
   }
 
-  .info h2{
+  .info h2 {
     font-size: 38px;
   }
 
-  .message-text span{
+  .message-text span {
     font-size: 28px;
   }
 
-  .email h4{
+  .email h4 {
     font-size: 16px;
     font-weight: normal;
   }
@@ -138,18 +137,18 @@ footer {
   }
 
   .message-button {
-    padding: 12px
+    padding: 12px;
   }
 
-  .info h2{
+  .info h2 {
     font-size: 54px;
   }
 
-  .message-text span{
+  .message-text span {
     font-size: 36px;
   }
 
-  .email h4{
+  .email h4 {
     font-size: 16px;
     font-weight: normal;
   }
@@ -176,15 +175,15 @@ footer {
     font-size: 20px;
   }
 
-  .info h2{
+  .info h2 {
     font-size: 60px;
   }
 
-  .message-text span{
+  .message-text span {
     font-size: 42px;
   }
 
-  .email h4{
+  .email h4 {
     font-size: 20px;
     font-weight: normal;
   }

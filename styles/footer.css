@@ -59,7 +59,6 @@ footer {
   justify-content: center;
   color: var(--button-text-color);
   padding: 8px 10px;
-  transition: all 0.3s;
   font-size: 16px;
 }
 
@@ -161,6 +160,9 @@ footer {
 }
 
 @media (min-width: 1921px) {
+  footer {
+    padding: 20px 24px;
+  }
 
   .message-container {
     display: flex;

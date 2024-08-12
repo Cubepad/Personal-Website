@@ -14,7 +14,9 @@
 
 .about-me-text-div div,
 .about-me-text p,
-.img-container {
+.img-container,
+.intro-box,
+footer {
   background-color: var(--background-color);
   border: 1px var(--border-color) solid;
   border-radius: 20px;
@@ -41,6 +43,7 @@
   margin-bottom: 20px;
   text-align: center;
   font-size: 32px;
+  color: var(--title-color);
 }
 
 .about-me-icon {
@@ -54,6 +57,7 @@
 .about-me {
   display: flex;
 }
+
 
 @media (max-width: 768px){
   .about-me-flexbox {

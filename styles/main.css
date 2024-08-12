@@ -5,6 +5,8 @@ body {
   background-image: var(--background-img);
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   min-height: 100vh;
   margin: 0;
   min-width: 320px;
@@ -68,7 +70,7 @@ html {
 @media (max-width: 768px) {
   body {
     padding: 120px 0px 0px 0px;
-    margin: 0px 10px 0px 10px;
+    margin: 0% 2%;
   }
 
   h1 {
@@ -79,7 +81,7 @@ html {
 @media (min-width: 769px) and (max-width:1024px) {
   body {
     padding: 120px 0px 0px 0px;
-    margin: 0px 60px 0px 60px;
+    margin: 0px 6%;
   }
 
   h1 {
@@ -87,13 +89,16 @@ html {
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1920px) {
+@media (min-width: 1025px) {
   body {
     padding: 120px 0px 0px 0px;
-    margin: 0px 120px 0px 120px;
+    margin: 0% 15%;
+  }
+
+  h1 {
+    font-size: 68px;
   }
 }
-
 
 .material-symbols-rounded {
   font-variation-settings:
@@ -115,6 +120,5 @@ p {
 }
 
 h1 {
-  font-size: 48px;
   margin-bottom: 100px;
 }

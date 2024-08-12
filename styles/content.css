@@ -182,10 +182,7 @@ footer {
   }
 }
 
-@media (min-width: 1025px) {
-  h1 {
-    font-size: 60px;
-  }
+@media (min-width: 1025px) and (max-width: 1920px) {
 
   .about-me-flexbox {
     display: flex;
@@ -258,5 +255,85 @@ footer {
   .projects p,
   .about-me-text p {
     font-size: 18px;
+  }
+}
+
+@media (min-width: 1921px) {
+
+  .about-me-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .placeholder-img {
+    height: 172px;
+  }
+
+  .img-container {
+    border: 1px var(--border-color) solid;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-me-text-div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .about-me-text-div h3{
+    font-size: 36px;
+  }
+
+  .about-me-text-div h5 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: normal;
+  }
+
+  .about-me .subheading,
+  .projects .subheading {
+    font-size: 48px;
+  }
+
+  .about-me-text-div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px var(--border-color) solid;
+    border-radius: 20px;
+    flex: 1;
+    gap: 8px;
+    padding: 20px 16px;
+    max-width: 40%;
+  }
+
+  .about-me {
+    height: 400px;
+  }
+
+  .projects p,
+  .about-me-text p {
+    font-size: 24px;
+  }
+
+  .intro-box h2 {
+    font-size: 36px;
   }
 }

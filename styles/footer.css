@@ -159,3 +159,35 @@ footer {
     font-size: 24px;
   }
 }
+
+@media (min-width: 1921px) {
+
+  .message-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+
+  .message-button {
+    padding: 16px;
+    font-size: 20px;
+  }
+
+  .info h2{
+    font-size: 60px;
+  }
+
+  .message-text span{
+    font-size: 42px;
+  }
+
+  .email h4{
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .connect {
+    font-size: 30px;
+  }
+}

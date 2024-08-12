@@ -10,7 +10,8 @@
   border: 1px var(--border-color) solid;
   border-radius: 20px;
   padding: 12px 16px;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
+  text-align: center;
 }
 
 .about-me-text-div div,
@@ -28,13 +29,14 @@
   border: 1px var(--border-color) solid;
   border-radius: 20px;
   padding: 20px 24px;
-  transition: width 0.3s;
+  transition: all 0.3s;
 }
 
 .about-me p,
 .projects p,
 .about-me-text-div h5 {
   color: var(--text-color);
+  text-align: center;
 }
 
 .about-me .subheading,
@@ -187,6 +189,11 @@
     gap: 40px;
   }
 
+  .intro-box {
+    width: 80%;
+    margin: auto;
+  }
+
   .placeholder-img {
     height: 172px;
   }
@@ -231,6 +238,11 @@
     font-size: 40px;
   }
 
+  
+  .intro-box h2 {
+    font-size: 30px;
+  }
+
   .about-me-text-div div {
     display: flex;
     flex-direction: column;
@@ -252,6 +264,18 @@
   .about-me-text p {
     font-size: 18px;
   }
+
+  .about-me p {
+    padding: 20px 24px;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .projects p {
+    padding: 20px 24px;
+    width: 70%;
+    margin: auto;
+  }
 }
 
 @media (min-width: 1921px) {
@@ -260,6 +284,11 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
+  }
+
+  .intro-box {
+    width: 70%;
+    margin: auto;
   }
 
   .placeholder-img {
@@ -329,6 +358,18 @@
   }
 
   .intro-box h2 {
-    font-size: 36px;
+    font-size: 38px;
   }
+
+.about-me p {
+  padding: 20px 24px;
+  width: 90%;
+  margin: auto;
+}
+
+.projects p {
+  padding: 20px 24px;
+  width: 60%;
+  margin: auto;
+}
 }

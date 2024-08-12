@@ -12,6 +12,7 @@
     justify-content: space-between;
     z-index: 100;
     backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--header-background-color);
     transition: all 0.3s;
   }
@@ -154,6 +155,7 @@
     justify-content: space-between;
     z-index: 100;
     backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--header-background-color);
     transition: all 0.3s;
   }
@@ -283,6 +285,7 @@
     justify-content: space-between;
     z-index: 100;
     backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--header-background-color);
     transition: all 0.3s;
   }

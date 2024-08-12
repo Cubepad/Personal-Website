@@ -129,6 +129,11 @@ footer {
 }
 
 @media (min-width: 1025px) and (max-width: 1920px) {
+  footer {
+    width: 80%;
+    margin: auto;
+  }
+
   .message-container {
     display: flex;
     justify-content: space-between;
@@ -161,7 +166,9 @@ footer {
 @media (min-width: 1921px) {
   footer {
     padding: 20px 24px;
-  }
+    width: 80%;
+    margin: auto;
+  } 
 
   .message-container {
     display: flex;

@@ -1,3 +1,15 @@
+.theme-button {
+  background-color: var(--button-background-color);
+  border-radius: 10px;
+  border: 1px var(--border-color) solid;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .header {
     height: 56px;
@@ -59,19 +71,6 @@
 
   .menu-button:hover .menu-icon {
     color: var(--title-color);
-  }
-
-  .theme-button {
-    background-color: var(--button-background-color);
-    transition: background-color 1s;
-    border-radius: 10px;
-    border: 1px var(--border-color) solid;
-    transition: background-color 0.3s;
-    cursor: pointer;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .left-section {
@@ -204,19 +203,6 @@
     color: var(--title-color);
   }
 
-  .theme-button {
-    background-color: var(--button-background-color);
-    transition: background-color 1s;
-    border-radius: 10px;
-    border: 1px var(--border-color) solid;
-    transition: background-color 0.3s;
-    cursor: pointer;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .left-section {
     display: flex;
     align-items: center;
@@ -332,19 +318,6 @@
 
   .menu-button:hover .menu-icon {
     color: var(--title-color);
-  }
-
-  .theme-button {
-    background-color: var(--button-background-color);
-    transition: background-color 1s;
-    border-radius: 10px;
-    border: 1px var(--border-color) solid;
-    transition: background-color 0.3s;
-    cursor: pointer;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .left-section {

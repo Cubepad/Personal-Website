@@ -1,18 +1,6 @@
-.theme-button {
-  background-color: var(--button-background-color);
-  border-radius: 10px;
-  border: 1px var(--border-color) solid;
-  transition: background-color 0.3s;
-  cursor: pointer;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 @media (max-width: 768px) {
   .header {
-    height: 56px;
+    height: 48px;
     position: fixed;
     top: 20px;
     left: 2%;
@@ -21,6 +9,7 @@
     border-radius: 20px;
     padding: 12px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     z-index: 100;
     backdrop-filter: saturate(180%) blur(20px);
@@ -37,20 +26,11 @@
   .logo-container {
     display: flex;
     align-items: center;
-    background-color: var(--background-color);
-    border: 1px var(--background-color) solid;
-    border-radius: 10px;
-    padding: 8px 6px;
     transition: all 0.3s;
   }
 
-  .logo-container:hover {
-    background-color: var(--button-background-color);
-    border: 1px var(--border-color) solid;
-  }
-
   .menu-icon {
-    font-size: 48px;
+    font-size: 44px;
     color: var(--button-text-color);
     transition: color 0.3s;
     user-select: none;
@@ -63,7 +43,6 @@
     border: 1px var(--border-color) solid;
     transition: background-color 0.3s;
     cursor: pointer;
-    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,6 +94,23 @@
     justify-content: center;
   }
 
+  .theme-button {
+    background-color: var(--button-background-color);
+    border-radius: 10px;
+    border: 1px var(--border-color) solid;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .theme-icon {
+    font-size: 44px;
+    color: var(--button-text-color);
+    transition: color 0.3s;
+  }
+
   .dropdown-icon {
     margin-right: 10px;
   }
@@ -141,7 +137,7 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .header {
-    height: 56px;
+    height: 42px;
     position: fixed;
     top: 20px;
     left: 1%;
@@ -151,6 +147,7 @@
     border-radius: 20px;
     padding: 12px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     z-index: 100;
     backdrop-filter: saturate(180%) blur(20px);
@@ -160,23 +157,14 @@
   }
 
   .logo {
-    width: 60px;
+    width: 48px;
     color: grey;
   }
 
   .logo-container {
     display: flex;
     align-items: center;
-    background-color: var(--background-color);
-    border: 1px var(--background-color) solid;
-    border-radius: 10px;
-    padding: 8px 6px;
     transition: all 0.3s;
-  }
-
-  .logo-container:hover {
-    background-color: var(--button-background-color);
-    border: 1px var(--border-color) solid;
   }
 
   .menu-icon {
@@ -216,12 +204,7 @@
   }
 
   .dropdown-content {
-    position: absolute;
     background-color: var(--button-background-color);
-    z-index: 1;
-    height: 38px;
-    right: 0;
-    top: 0;
     border-radius: 10px;
     border: 1px var(--border-color) solid;
     padding: 6px;
@@ -240,6 +223,25 @@
     align-items: center;
     justify-content: center;
     width: 132px;
+    padding: 6px 0px;
+  }
+
+  .theme-button {
+    background-color: var(--button-background-color);
+    border-radius: 10px;
+    border: 1px var(--border-color) solid;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 6px;
+  }
+
+  .theme-icon {
+    font-size: 36px;
+    color: var(--button-text-color);
+    transition: color 0.3s;
   }
 
   .dropdown-icon {
@@ -258,7 +260,7 @@
 
 @media (min-width: 1024px) {
   .header {
-    height: 56px;
+    height: 38px;
     position: fixed;
     top: 20px;
     left: 5%;
@@ -268,6 +270,7 @@
     border-radius: 20px;
     padding: 12px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     z-index: 100;
     backdrop-filter: saturate(180%) blur(20px);
@@ -277,7 +280,7 @@
   }
 
   .logo {
-    width: 60px;
+    width: 44px;
     color: grey;
   }
 
@@ -333,15 +336,10 @@
   }
 
   .dropdown-content {
-    position: absolute;
     background-color: var(--button-background-color);
-    z-index: 1;
-    height: 38px;
-    right: 0;
-    top: 0;
     border-radius: 10px;
     border: 1px var(--border-color) solid;
-    padding: 6px;
+    padding: 2px;
     transition: all 0.3s;
     display: flex;
     gap: 6px;
@@ -356,6 +354,26 @@
     align-items: center;
     justify-content: center;
     width: 132px;
+    padding: 6px 0px;
+
+  }
+
+  .theme-button {
+    background-color: var(--button-background-color);
+    border-radius: 10px;
+    border: 1px var(--border-color) solid;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 6px;
+  }
+  
+  .theme-icon {
+    font-size: 32px;
+    color: var(--button-text-color);
+    transition: color 0.3s;
   }
 
   .dropdown-icon {

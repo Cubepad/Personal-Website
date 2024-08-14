@@ -1,7 +1,6 @@
 footer {
   margin-top: auto;
   border: 1px var(--border-color) solid;
-  background-color: var(--background-color);
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;

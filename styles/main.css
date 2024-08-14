@@ -23,18 +23,18 @@ html {
 /* inter-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/inter-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/inter-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-700 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/inter-v18-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/inter-v18-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 :root {
@@ -46,7 +46,12 @@ html {
   --button-text-color: rgba(255, 255, 255, 0.5);
   --button-hover: rgb(51, 51, 51);
   --header-background-color: rgba(18, 18, 18, 0.7);
-  --background-img: url(../portfolio-background-dark.avif);
+  --background-img: linear-gradient(
+    to bottom right,
+    rgb(40, 40, 41),
+    rgb(0, 0, 0)
+  );
+  --header-height: 90px;
 }
 
 .light-theme {
@@ -57,12 +62,13 @@ html {
   --text-color: rgba(0, 0, 0, 0.85);
   --button-text-color: rgba(0, 0, 0, 0.75);
   --button-hover: rgb(210, 210, 210);
-  --header-background-color: rgba(240, 240, 240, 0.9);
+  --header-background-color: rgba(211, 210, 210, 0.5);
   --background-img: radial-gradient(
     circle,
-    rgb(248, 248, 248),
+    rgb(202, 210, 245),
     rgb(200, 200, 200)
   );
+  --header-height: 90px;
 }
 
 .hidden {
@@ -86,49 +92,52 @@ html {
 
 @media (max-width: 768px) {
   body {
-    padding: 120px 0px 0px 0px;
+    padding: 112px 0px 0px 0px;
   }
 
-  .content,
+  .hero-section,
+  .about-me,
+  .projects,
   footer {
     margin: 0% 2%;
   }
 
   h1 {
     font-size: 48px;
-    line-height: 58px;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   body {
-    padding: 120px 0px 0px 0px;
+    padding: 90px 0px 0px 0px;
   }
 
-  .content,
+  .hero-section,
+  .about-me,
+  .projects,
   footer {
     margin: 0px 6%;
   }
 
   h1 {
     font-size: 62px;
-    line-height: 74px;
   }
 }
 
 @media (min-width: 1025px) {
   body {
-    padding: 120px 0px 0px 0px;
+    padding: 90px 0px 0px 0px;
   }
 
-  .content,
+  .hero-section,
+  .about-me,
+  .projects,
   footer {
     margin: 0% 10%;
   }
 
   h1 {
     font-size: 68px;
-    line-height: 82px;
   }
 }
 
@@ -149,4 +158,10 @@ p {
 
 h1 {
   margin-bottom: 72px;
+  line-height: 1.3;
+}
+
+p {
+  line-height: 1.5;
+  max-width: 70ch;
 }

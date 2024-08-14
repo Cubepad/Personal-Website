@@ -139,10 +139,9 @@
   .header {
     height: 42px;
     position: fixed;
-    top: 20px;
+    top: 14px;
     left: 1%;
     right: 1%;
-    background-color: var(--background-color);
     border: 1px var(--border-color) solid;
     border-radius: 20px;
     padding: 12px;
@@ -262,10 +261,9 @@
   .header {
     height: 38px;
     position: fixed;
-    top: 20px;
+    top: 14px;
     left: 5%;
     right: 5%;
-    background-color: var(--background-color);
     border: 1px var(--border-color) solid;
     border-radius: 20px;
     padding: 12px;
@@ -287,16 +285,9 @@
   .logo-container {
     display: flex;
     align-items: center;
-    background-color: var(--background-color);
-    border: 1px var(--background-color) solid;
     border-radius: 10px;
     padding: 8px 6px;
     transition: all 0.3s;
-  }
-
-  .logo-container:hover {
-    background-color: var(--button-background-color);
-    border: 1px var(--border-color) solid;
   }
 
   .menu-icon {

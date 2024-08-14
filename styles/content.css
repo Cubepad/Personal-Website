@@ -1,31 +1,22 @@
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  flex: 1;
-}
-
-.intro-box {
-  background-color: var(--background-color);
-  border: 1px var(--border-color) solid;
+.hero-section {
   border-radius: 20px;
   padding: 12px 16px;
+  padding: 15vh 0vh 54vh 0vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-me-text-div div,
 .about-me-text p,
 .img-container {
-  background-color: var(--background-color);
-  border: 1px var(--border-color) solid;
   border-radius: 20px;
   padding: 12px 16px;
   transition: all 0.3s;
 }
 
 .projects p {
-  background-color: var(--background-color);
-  border: 1px var(--border-color) solid;
   border-radius: 20px;
   padding: 20px 24px;
   transition: all 0.3s;
@@ -46,16 +37,17 @@
   color: var(--title-color);
 }
 
+
 .about-me-icon {
   font-size: 38px;
 }
 
 .projects {
-  margin-bottom: 40px;
-}
-
-.about-me {
+  height: calc(100vh - var(--header-height));
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -83,6 +75,8 @@
   .about-me {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - var(--header-height))
   }
 
   .about-me-text {
@@ -102,7 +96,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px var(--border-color) solid;
     border-radius: 20px;
     flex: 1;
     gap: 8px;
@@ -138,6 +131,8 @@
   .about-me {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - var(--header-height))
   }
 
   .about-me-text {
@@ -149,7 +144,7 @@
   .about-me-text-div {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .about-me-text-div h3 {
@@ -161,7 +156,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px var(--border-color) solid;
     border-radius: 20px;
     flex: 1;
     gap: 8px;
@@ -169,8 +163,8 @@
     max-width: 40%;
   }
 
-  .about-me {
-    height: 400px;
+  .about-me p {
+    align-self: center;
   }
 
   .about-me-text-div h5 {
@@ -188,17 +182,11 @@
     gap: 40px;
   }
 
-  .intro-box {
-    width: 80%;
-    margin: auto;
-  }
-
   .placeholder-img {
     height: 172px;
   }
 
   .img-container {
-    border: 1px var(--border-color) solid;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -208,6 +196,8 @@
   .about-me {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - var(--header-height))
   }
 
   .about-me-text {
@@ -219,7 +209,7 @@
   .about-me-text-div {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .about-me-text-div h3 {
@@ -237,7 +227,7 @@
     font-size: 40px;
   }
 
-  .intro-box h2 {
+  .hero-section h2 {
     font-size: 30px;
   }
 
@@ -246,16 +236,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px var(--border-color) solid;
     border-radius: 20px;
     flex: 1;
     gap: 8px;
     padding: 20px 16px;
     max-width: 40%;
-  }
-
-  .about-me {
-    height: 400px;
   }
 
   .projects p,
@@ -266,13 +251,12 @@
   .about-me p {
     padding: 20px 24px;
     width: 90%;
-    margin: auto;
+    align-self: center;
   }
 
   .projects p {
     padding: 20px 24px;
     width: 70%;
-    margin: auto;
   }
 }
 
@@ -282,11 +266,6 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-  }
-
-  .intro-box {
-    width: 70%;
-    margin: auto;
   }
 
   .placeholder-img {
@@ -304,6 +283,8 @@
   .about-me {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - var(--header-height));
   }
 
   .about-me-text {
@@ -315,7 +296,7 @@
   .about-me-text-div {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .about-me-text-div h3 {
@@ -338,7 +319,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px var(--border-color) solid;
     border-radius: 20px;
     flex: 1;
     gap: 8px;
@@ -346,28 +326,23 @@
     max-width: 40%;
   }
 
-  .about-me {
-    height: 400px;
-  }
-
   .projects p,
   .about-me-text p {
     font-size: 24px;
   }
 
-  .intro-box h2 {
+  .hero-section h2 {
     font-size: 38px;
   }
 
   .about-me p {
     padding: 20px 24px;
     width: 90%;
-    margin: auto;
+    align-self: center;
   }
 
   .projects p {
     padding: 20px 24px;
     width: 60%;
-    margin: auto;
   }
 }

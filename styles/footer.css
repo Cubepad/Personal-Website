@@ -1,5 +1,4 @@
 footer {
-  margin-top: auto;
   border: 1px var(--border-color) solid;
   border-radius: 20px;
   padding: 20px;
@@ -130,7 +129,8 @@ footer {
 @media (min-width: 1025px) and (max-width: 1920px) {
   footer {
     width: 80%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .message-container {
@@ -165,8 +165,9 @@ footer {
 @media (min-width: 1921px) {
   footer {
     padding: 20px 24px;
-    width: 80%;
-    margin: auto;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
   } 
 
   .message-container {

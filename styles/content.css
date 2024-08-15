@@ -36,7 +36,6 @@
   color: var(--title-color);
 }
 
-
 .about-me-icon {
   font-size: 38px;
 }
@@ -75,7 +74,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - var(--header-height))
+    height: calc(100vh - var(--header-height));
   }
 
   .about-me-text {
@@ -131,7 +130,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - var(--header-height))
+    height: calc(100vh - var(--header-height));
   }
 
   .about-me-text {
@@ -196,7 +195,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - var(--header-height))
+    height: calc(100vh - var(--header-height));
   }
 
   .about-me-text {

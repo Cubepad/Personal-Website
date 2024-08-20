@@ -46,11 +46,7 @@ html {
   --button-text-color: rgba(255, 255, 255, 0.5);
   --button-hover: rgb(51, 51, 51);
   --header-background-color: rgba(18, 18, 18, 0.7);
-  --background-img: linear-gradient(
-    to bottom right,
-    rgb(40, 40, 41),
-    rgb(0, 0, 0)
-  );
+  --background-img: linear-gradient(to bottom right, rgb(30, 30, 33), rgb(2, 2, 2));
   --header-height: 90px;
 }
 

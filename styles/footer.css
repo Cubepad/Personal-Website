@@ -60,6 +60,11 @@ footer {
   font-size: 16px;
 }
 
+.message-button span,
+.email span {
+ transition: all 0.15s; 
+}
+
 .chat-icon {
   margin-right: 10px;
 }

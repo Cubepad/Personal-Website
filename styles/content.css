@@ -62,12 +62,15 @@
   }
 
   .img-container {
-    border: 1px var(--border-color) solid;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 16px;
+  }
+
+  .hero-section h2 {
+    padding: 0% 4%;
   }
 
   .about-me {
@@ -119,7 +122,6 @@
   }
 
   .img-container {
-    border: 1px var(--border-color) solid;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -271,7 +273,6 @@
   }
 
   .img-container {
-    border: 1px var(--border-color) solid;
     border-radius: 20px;
     display: flex;
     align-items: center;

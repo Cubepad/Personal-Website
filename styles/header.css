@@ -76,7 +76,7 @@
     border-radius: 10px;
     border: 1px var(--border-color) solid;
     padding: 6px;
-    width: 200px;
+    width: 164px;
     transition: all 0.3s;
     display: flex;
     flex-direction: column;
@@ -91,7 +91,7 @@
     color: var(--button-text-color);
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
   }
 
   .theme-button {
@@ -102,7 +102,6 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
 
   .theme-icon {
@@ -111,8 +110,8 @@
     transition: color 0.3s;
   }
 
-  .dropdown-icon {
-    margin-right: 10px;
+  .theme-button:hover .theme-icon {
+    color: var(--title-color);
   }
 
   .dropdown-content a:hover {
@@ -120,8 +119,13 @@
     color: var(--title-color);
   }
 
+  .dropdown-content span {
+    transition: all 0.15s;
+  }
+
   .dropdown-content a:hover span {
-    scale: 1.1;
+    scale: 1.2;
+    transform: translateY(2px);
   }
 
   .right-section:focus-within .dropdown-content {
@@ -140,8 +144,8 @@
     height: 42px;
     position: fixed;
     top: 14px;
-    left: 1%;
-    right: 1%;
+    left: 3%;
+    right: 3%;
     border: 1px var(--border-color) solid;
     border-radius: 20px;
     padding: 12px;
@@ -243,6 +247,11 @@
     transition: color 0.3s;
   }
 
+  .theme-button:hover .theme-icon {
+    color: var(--title-color);
+  }
+
+
   .dropdown-icon {
     margin-right: 10px;
   }
@@ -252,8 +261,14 @@
     color: var(--title-color);
   }
 
+  .dropdown-content span {
+    transition: all 0.15s;
+  }
+
+
   .dropdown-content a:hover span {
     scale: 1.1;
+    transform: translateY(2px);
   }
 }
 
@@ -366,6 +381,11 @@
     transition: color 0.3s;
   }
 
+  .theme-button:hover .theme-icon {
+    color: var(--title-color);
+  }
+
+
   .dropdown-icon {
     margin-right: 10px;
   }
@@ -375,7 +395,12 @@
     color: var(--title-color);
   }
 
+  .dropdown-content span {
+    transition: all 0.15s;
+  }
+
   .dropdown-content a:hover span {
     scale: 1.1;
+    transform: translateY(2px);
   }
 }

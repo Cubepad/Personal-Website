@@ -11,17 +11,17 @@
   "display": "standalone",
   "icons": [
       {
-          "src": "/logo/favicon/personal-logo-favicon-192.png",
+          "src": "/logo/favicon/favicon-192.png",
           "sizes": "192x192",
           "type": "image/png"
       },
       {
-          "src": "/logo/favicon/personal-logo-favicon-512.png",
+          "src": "/logo/favicon/favicon-512.png",
           "sizes": "512x512",
           "type": "image/png"
       },
       {
-        "src": "/logo/favicon/personal-logo-favicon-512.png",
+        "src": "/logo/favicon/favicon-512.png",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "maskable"

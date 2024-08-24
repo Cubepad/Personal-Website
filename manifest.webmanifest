@@ -7,7 +7,7 @@
   "start_url": "/index.html",
   "background_color": "rgb(18, 18, 18)",
   "theme_color": "rgb(35, 35, 35)",
-  "orientation": "any",
+  "orientation": "portrait",
   "display": "standalone",
   "icons": [
       {

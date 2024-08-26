@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .about-me-text-div div,
@@ -38,6 +39,7 @@
 
 .about-me-icon {
   font-size: 38px;
+  user-select: none;
 }
 
 .projects {
@@ -59,6 +61,7 @@
 
   .placeholder-img {
     height: 148px;
+    width: auto;
   }
 
   .img-container {
@@ -71,6 +74,7 @@
 
   .hero-section h2 {
     padding: 0% 4%;
+    max-width: 38ch;
   }
 
   .about-me {
@@ -119,6 +123,7 @@
 
   .placeholder-img {
     height: 172px;
+    width: auto;
   }
 
   .img-container {
@@ -184,6 +189,7 @@
 
   .placeholder-img {
     height: 172px;
+    width: auto;
   }
 
   .img-container {
@@ -229,6 +235,7 @@
 
   .hero-section h2 {
     font-size: 30px;
+    max-width: 38ch;
   }
 
   .about-me-text-div div {
@@ -270,6 +277,7 @@
 
   .placeholder-img {
     height: 172px;
+    width: auto;
   }
 
   .img-container {
@@ -332,6 +340,7 @@
 
   .hero-section h2 {
     font-size: 38px;
+    max-width: 38ch;
   }
 
   .about-me p {

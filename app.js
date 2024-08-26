@@ -1,10 +1,15 @@
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
-    if (entry.isIntersecting) {
+    if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
       entry.target.classList.add("show");
+      observer.unobserve(entry.target); // Stop observing once the class has been added
     }
   });
+}, {
+  root: null, // Use the viewport as the root
+  rootMargin: '0px', // No margin
+  threshold: 0.5 // Trigger when 50% of the element is visible
 });
 
 const hiddenElements = document.querySelectorAll(".hidden");

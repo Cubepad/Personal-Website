@@ -1,8 +1,8 @@
 footer {
   border: 1px var(--border-color) solid;
-  border-radius: 20px;
+  border-radius: 24px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .connect {
@@ -18,7 +18,7 @@ footer {
 .email {
   display: flex;
   background-color: var(--button-background-color);
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1px var(--border-color) solid;
   transition: all 0.3s;
   cursor: pointer;
@@ -48,7 +48,7 @@ footer {
 
 .message-button {
   background-color: var(--button-background-color);
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1px var(--border-color) solid;
   transition: all 0.3s;
   cursor: pointer;
@@ -62,7 +62,7 @@ footer {
 
 .message-button span,
 .email span {
- transition: all 0.15s; 
+  transition: all 0.15s;
 }
 
 .chat-icon {
@@ -133,7 +133,8 @@ footer {
 
 @media (min-width: 1025px) and (max-width: 1920px) {
   footer {
-    width: 80%;
+    width: 70%;
+    max-width: 950px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -171,6 +172,7 @@ footer {
   footer {
     padding: 20px 24px;
     width: 60%;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
   }

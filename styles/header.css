@@ -6,7 +6,7 @@
     left: 2%;
     right: 2%;
     border: 1px var(--border-color) solid;
-    border-radius: 20px;
+    border-radius: 24px;
     padding: 12px;
     display: flex;
     align-items: center;
@@ -16,6 +16,7 @@
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--header-background-color);
     transition: all 0.3s;
+    user-select: none;
   }
 
   .logo {
@@ -39,7 +40,7 @@
   .menu-button {
     background-color: var(--button-background-color);
     transition: background-color 1s;
-    border-radius: 10px;
+    border-radius: 12px;
     border: 1px var(--border-color) solid;
     transition: background-color 0.3s;
     cursor: pointer;
@@ -73,10 +74,10 @@
     z-index: 1;
     right: 0;
     top: 75px;
-    border-radius: 10px;
+    border-radius: 16px;
     border: 1px var(--border-color) solid;
     padding: 6px;
-    width: 164px;
+    width: 160px;
     transition: all 0.3s;
     display: flex;
     flex-direction: column;
@@ -96,7 +97,7 @@
 
   .theme-button {
     background-color: var(--button-background-color);
-    border-radius: 10px;
+    border-radius: 12px;
     border: 1px var(--border-color) solid;
     transition: background-color 0.3s;
     cursor: pointer;
@@ -147,7 +148,7 @@
     left: 3%;
     right: 3%;
     border: 1px var(--border-color) solid;
-    border-radius: 20px;
+    border-radius: 24px;
     padding: 12px;
     display: flex;
     align-items: center;
@@ -157,6 +158,7 @@
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--header-background-color);
     transition: all 0.3s;
+    user-select: none;
   }
 
   .logo {
@@ -208,9 +210,9 @@
 
   .dropdown-content {
     background-color: var(--button-background-color);
-    border-radius: 10px;
+    border-radius: 12px;
     border: 1px var(--border-color) solid;
-    padding: 6px;
+    padding: 4px;
     transition: all 0.3s;
     display: flex;
     background-color: var(--background-color);
@@ -219,7 +221,7 @@
 
   .dropdown-content a {
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 8px;
     transition: background-color 0.3s, color 0.3s;
     color: var(--button-text-color);
     display: flex;
@@ -280,7 +282,7 @@
     left: 5%;
     right: 5%;
     border: 1px var(--border-color) solid;
-    border-radius: 20px;
+    border-radius: 24px;
     padding: 12px;
     display: flex;
     align-items: center;
@@ -290,6 +292,7 @@
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--header-background-color);
     transition: all 0.3s;
+    user-select: none;
   }
 
   .logo {
@@ -343,7 +346,7 @@
 
   .dropdown-content {
     background-color: var(--button-background-color);
-    border-radius: 10px;
+    border-radius: 12px;
     border: 1px var(--border-color) solid;
     padding: 2px;
     transition: all 0.3s;

@@ -62,10 +62,10 @@ html {
   --button-text-color: rgba(0, 0, 0, 0.75);
   --button-hover: rgb(210, 210, 210);
   --header-background-color: rgba(211, 210, 210, 0.5);
-  --background-img: radial-gradient(
-    circle,
-    rgb(202, 210, 245),
-    rgb(200, 200, 200)
+  --background-img: linear-gradient(
+    to bottom right,
+    rgb(192, 200, 240),
+    rgb(216, 216, 216)
   );
   --header-height: 90px;
 }
@@ -201,4 +201,8 @@ p {
 
 .icon {
   user-select: none;
+}
+
+a {
+  text-decoration: none;
 }

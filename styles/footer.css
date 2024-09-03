@@ -11,7 +11,7 @@ footer {
   gap: 6px;
 }
 
-.connect span {
+.email-icon {
   margin-right: 10px;
 }
 
@@ -42,7 +42,7 @@ footer {
 
 .info hr {
   border: 1px var(--border-color) solid;
-  border-radius: 100px;
+  border-radius: 1px;
   width: 100%;
 }
 
@@ -87,6 +87,52 @@ footer {
 .connect h4 {
   margin: 4px 0px;
 }
+
+.social-icon {
+  color: var(--text-color);
+  transition: all 0.15s;
+  display: block;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  color: var(--title-color);
+}
+
+.social-section a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.connect-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-section {
+  display: flex;
+  gap: 22px;
+}
+
+@media (max-width: 500px) {
+  .connect-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .social-section {
+    justify-content: space-around;
+    margin: 0px 10px;
+    width: -webkit-fill-available;
+  }
+}
+
 
 @media (min-width: 600px) and (max-width: 768px) {
   .message-container {

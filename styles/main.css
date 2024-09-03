@@ -1,6 +1,6 @@
 body {
   color: var(--title-color);
-  background-image: var(--background-img);
+  background: var(--background-img);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;

@@ -1,5 +1,4 @@
 body {
-  background-color: var(--background-color);
   color: var(--title-color);
   background-image: var(--background-img);
   background-attachment: fixed;

@@ -91,6 +91,7 @@ html {
 @media (max-width: 768px) {
   body {
     padding: 112px 0px 0px 0px;
+    background-attachment: scroll;
   }
 
   .hero-section,

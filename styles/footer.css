@@ -9,6 +9,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  margin-bottom: 24px;
 }
 
 .email-icon {
@@ -24,6 +25,7 @@ footer {
   cursor: pointer;
   color: var(--button-text-color);
   padding: 8px 10px;
+  font-size: 16px;
 }
 
 .email h4 {

@@ -30,3 +30,5 @@ btn.onclick = function () {
     logo_enlarged.src = "logo/personal-logo-white-no-detail-v2.svg";
   }
 };
+
+document.getElementById("year").textContent = new Date().getFullYear();

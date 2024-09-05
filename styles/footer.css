@@ -16,18 +16,6 @@ footer {
   margin-right: 10px;
 }
 
-.email {
-  display: flex;
-  background-color: var(--button-background-color);
-  border-radius: 12px;
-  border: 1px var(--border-color) solid;
-  transition: all 0.3s;
-  cursor: pointer;
-  color: var(--button-text-color);
-  padding: 8px 10px;
-  font-size: 16px;
-}
-
 .email h4 {
   font-weight: normal;
 }
@@ -48,7 +36,8 @@ footer {
   width: 100%;
 }
 
-.message-button {
+.message-button,
+.email {
   background-color: var(--button-background-color);
   border-radius: 12px;
   border: 1px var(--border-color) solid;

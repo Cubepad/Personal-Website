@@ -60,7 +60,7 @@ html {
   --title-color: rgb(38, 38, 38);
   --text-color: rgba(0, 0, 0, 0.85);
   --button-text-color: rgba(0, 0, 0, 0.75);
-  --button-hover: rgb(210, 210, 210);
+  --button-hover: rgb(255, 255, 255);
   --header-background-color: rgba(211, 210, 210, 0.5);
   --background-img: linear-gradient(
     to bottom right,

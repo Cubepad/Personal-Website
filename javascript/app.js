@@ -25,9 +25,11 @@ btn.onclick = function () {
   if (document.body.classList.contains("light-theme")) {
     logo.src = "logo/personal-logo-black-no-detail.svg";
     logo_enlarged.src = "logo/personal-logo-black-no-detail-outline.svg";
+    btn.textContent = "light_mode";
   } else {
     logo.src = "logo/personal-logo-white-no-detail.svg";
     logo_enlarged.src = "logo/personal-logo-white-no-detail-v2.svg";
+    btn.textContent = "dark_mode";
   }
 };
 

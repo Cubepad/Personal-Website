@@ -22,7 +22,6 @@
   .logo {
     width: 60px;
     height: auto;
-    color: grey;
   }
 
   .logo-container {
@@ -50,14 +49,6 @@
     justify-content: center;
   }
 
-  .menu-button:hover .menu-icon {
-    color: var(--title-color);
-  }
-
-  .menu-button:hover,
-  .theme-button:hover {
-    background-color: var(--button-hover);
-  }
 
   .left-section {
     display: flex;
@@ -116,10 +107,6 @@
     transition: color 0.3s;
   }
 
-  .theme-button:hover .theme-icon {
-    color: var(--title-color);
-  }
-
   .dropdown-content a:hover {
     background-color: var(--button-hover);
     color: var(--title-color);
@@ -169,7 +156,6 @@
   .logo {
     width: 48px;
     height: auto;
-    color: grey;
   }
 
   .logo-container {
@@ -307,7 +293,6 @@
   .logo {
     width: 44px;
     height: auto;
-    color: grey;
   }
 
   .logo-container {

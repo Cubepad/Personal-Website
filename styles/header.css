@@ -276,6 +276,8 @@
     top: 14px;
     left: 5%;
     right: 5%;
+    margin: 0 auto;
+    max-width: 1600px;
     border: 1px var(--border-color) solid;
     border-radius: 24px;
     padding: 12px;

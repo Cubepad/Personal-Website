@@ -49,7 +49,6 @@
     justify-content: center;
   }
 
-
   .left-section {
     display: flex;
     align-items: center;
@@ -248,7 +247,6 @@
     color: var(--title-color);
   }
 
-
   .dropdown-icon {
     margin-right: 10px;
   }
@@ -261,7 +259,6 @@
   .dropdown-content span {
     transition: all 0.15s;
   }
-
 
   .dropdown-content a:hover span {
     scale: 1.1;
@@ -388,7 +385,6 @@
   .theme-button:hover .theme-icon {
     color: var(--title-color);
   }
-
 
   .dropdown-icon {
     margin-right: 10px;

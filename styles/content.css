@@ -49,6 +49,13 @@
   justify-content: center;
 }
 
+@media (max-width: 380px) {
+  .about-me,
+  .projects {
+    margin: 80px 0;
+  }
+}
+
 @media (max-width: 768px) {
   .about-me-flexbox {
     display: flex;

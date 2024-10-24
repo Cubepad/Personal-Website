@@ -36,4 +36,26 @@ theme_btn.onclick = function () {
   }
 };
 
+document.addEventListener('DOMContentLoaded', () => {
+  const menuBtn = document.querySelector('.menu-button');
+  const dropdownContent = document.querySelector('.dropdown-content');
+  
+  const toggleMenu = () => {
+    dropdownContent.classList.toggle('active');
+      menuBtn.querySelector('.menu-icon').textContent = 
+      dropdownContent.classList.contains('active') ? 'close' : 'menu';
+  };
+
+  menuBtn.addEventListener('click', toggleMenu);
+  
+  // Close menu when clicking outside or on a link
+  document.addEventListener('click', (e) => {
+      if (!menuBtn.contains(e.target) && !dropdownContent.contains(e.target) ||
+          e.target.closest('a')) {
+          dropdownContent.classList.remove('active');
+          menuBtn.querySelector('.menu-icon').textContent = 'menu';
+      }
+  });
+});
+
 document.getElementById("year").textContent = new Date().getFullYear();

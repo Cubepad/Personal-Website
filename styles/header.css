@@ -120,7 +120,7 @@
     transform: translateY(2px);
   }
 
-  .right-section:focus-within .dropdown-content {
+  .dropdown-content.active {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);

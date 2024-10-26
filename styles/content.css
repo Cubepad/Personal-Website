@@ -1,6 +1,6 @@
 .hero-section {
   border-radius: 20px;
-  padding: 12vh 0vh 58vh 0vh;
+  padding: 8rem 0rem 12rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -12,13 +12,13 @@
 .about-me-text p,
 .img-container {
   border-radius: 20px;
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   transition: all 0.3s;
 }
 
 .projects p {
   border-radius: 20px;
-  padding: 20px 24px;
+  padding: 1.25rem 1.5rem;
   transition: all 0.3s;
 }
 
@@ -32,17 +32,17 @@
 .projects .subheading {
   margin-bottom: 20px;
   text-align: center;
-  font-size: 32px;
+  font-size: 2rem;
   color: var(--title-color);
 }
 
 .about-me-icon {
-  font-size: 38px;
+  font-size: 2.375rem;
   user-select: none;
 }
 
 .projects {
-  height: calc(100vh - var(--header-height));
+  padding: 10rem 0rem 12rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,12 +57,16 @@
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    padding: 6rem 0rem 10rem;
+  }
+
   .about-me-flexbox {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5rem;
   }
 
   .placeholder-img {
@@ -75,30 +79,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px;
+    padding: 2rem;
   }
 
   .hero-section h2 {
-    padding: 0% 4%;
-    max-width: 38ch;
+    padding: 0% 8%;
+    max-width: 32ch;
   }
 
   .about-me {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - var(--header-height));
+    padding: 14rem 0rem 6rem;
   }
 
   .about-me-text {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .about-me-text-div {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     justify-content: center;
   }
 
@@ -109,13 +113,17 @@
     justify-content: center;
     border-radius: 20px;
     flex: 1;
-    gap: 8px;
-    padding: 12px 8px;
+    gap: 0.5rem;
+    padding: 0.75rem 0.5rem;
   }
 
   .about-me-text-div h5 {
     text-align: center;
     font-weight: normal;
+  }
+
+  .projects {
+    padding: 6rem 0rem;
   }
 }
 
@@ -124,7 +132,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5rem;
   }
 
   .placeholder-img {
@@ -136,30 +144,30 @@
     border-radius: 20px;
     display: flex;
     align-items: center;
-    padding: 16px;
+    padding: 2rem;
   }
 
   .about-me {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - var(--header-height));
+    padding: 16rem 0rem 14rem;
   }
 
   .about-me-text {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .about-me-text-div {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     justify-content: space-around;
   }
 
   .about-me-text-div h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .about-me-text-div div {
@@ -169,8 +177,8 @@
     justify-content: center;
     border-radius: 20px;
     flex: 1;
-    gap: 8px;
-    padding: 20px 16px;
+    gap: 0.5rem;
+    padding: 1.25rem 1rem;
     max-width: 40%;
   }
 
@@ -181,7 +189,7 @@
   .about-me-text-div h5 {
     text-align: center;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
@@ -190,7 +198,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5rem;
   }
 
   .placeholder-img {
@@ -202,45 +210,45 @@
     border-radius: 20px;
     display: flex;
     align-items: center;
-    padding: 16px;
+    padding: 1rem;
   }
 
   .about-me {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - var(--header-height));
+    padding: 18rem 0rem 12rem;
   }
 
   .about-me-text {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .about-me-text-div {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     justify-content: space-around;
   }
 
   .about-me-text-div h3 {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .about-me-text-div h5 {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: normal;
   }
 
   .about-me .subheading,
   .projects .subheading {
-    font-size: 40px;
+    font-size: 3rem;
   }
 
   .hero-section h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
     max-width: 38ch;
   }
 
@@ -251,24 +259,24 @@
     justify-content: center;
     border-radius: 20px;
     flex: 1;
-    gap: 8px;
-    padding: 20px 16px;
+    gap: 0.5rem;
+    padding: 1.25rem 1rem;
     max-width: 40%;
   }
 
   .projects p,
   .about-me-text p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .about-me p {
-    padding: 20px 24px;
+    padding: 1.25rem 1.5rem;
     width: 90%;
     align-self: center;
   }
 
   .projects p {
-    padding: 20px 24px;
+    padding: 1.25rem 1.5rem;
     width: 70%;
   }
 }
@@ -278,7 +286,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5rem;
   }
 
   .placeholder-img {
@@ -290,41 +298,41 @@
     border-radius: 20px;
     display: flex;
     align-items: center;
-    padding: 16px;
+    padding: 1rem;
   }
 
   .about-me {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - var(--header-height));
+    padding: 16rem 0rem 14rem;
   }
 
   .about-me-text {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .about-me-text-div {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     justify-content: space-around;
   }
 
   .about-me-text-div h3 {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 
   .about-me-text-div h5 {
     text-align: center;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: normal;
   }
 
   .about-me .subheading,
   .projects .subheading {
-    font-size: 48px;
+    font-size: 3.5rem;
   }
 
   .about-me-text-div div {
@@ -334,29 +342,29 @@
     justify-content: center;
     border-radius: 20px;
     flex: 1;
-    gap: 8px;
-    padding: 20px 16px;
+    gap: 0.5rem;
+    padding: 1.25rem 1rem;
     max-width: 40%;
   }
 
   .projects p,
   .about-me-text p {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .hero-section h2 {
-    font-size: 38px;
+    font-size: 2.375rem;
     max-width: 38ch;
   }
 
   .about-me p {
-    padding: 20px 24px;
+    padding: 1.25rem 1.5rem;
     width: 90%;
     align-self: center;
   }
 
   .projects p {
-    padding: 20px 24px;
+    padding: 1.25rem 1.5rem;
     width: 60%;
   }
 }

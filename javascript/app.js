@@ -18,23 +18,35 @@ const observer = new IntersectionObserver(
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
-let theme_btn = document.getElementById("theme_btn");
-let logo = document.getElementById("logo");
-let logo_enlarged = document.getElementById("logo_enlarged");
+const theme = {
+  btn: document.getElementById("theme_btn"),
+  logo: document.getElementById("logo"),
+  logoEnlarged: document.getElementById("logo_enlarged"),
+  
+  toggle() {
+    const isLight = document.body.classList.toggle("light-theme");
+    this.updateUI(isLight);
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  },
 
-theme_btn.onclick = function () {
-  document.body.classList.toggle("light-theme");
+  updateUI(isLight) {
+    this.logo.src = `logo/personal-logo-${isLight ? 'black' : 'white'}-no-detail.svg`;
+    this.logoEnlarged.src = `logo/personal-logo-${isLight ? 'black' : 'white'}-no-detail${isLight ? '-outline' : '-v2'}.svg`;
+    this.btn.textContent = `${isLight ? 'light' : 'dark'}_mode`;
+  },
 
-  if (document.body.classList.contains("light-theme")) {
-    logo.src = "logo/personal-logo-black-no-detail.svg";
-    logo_enlarged.src = "logo/personal-logo-black-no-detail-outline.svg";
-    theme_btn.textContent = "light_mode";
-  } else {
-    logo.src = "logo/personal-logo-white-no-detail.svg";
-    logo_enlarged.src = "logo/personal-logo-white-no-detail-v2.svg";
-    theme_btn.textContent = "dark_mode";
+  init() {
+    const stored = localStorage.getItem('theme');
+    const isLight = stored ? stored === 'light' 
+                  : !matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    isLight && document.body.classList.add('light-theme');
+    this.updateUI(isLight);
+    this.btn.onclick = () => this.toggle();
   }
 };
+
+document.addEventListener('DOMContentLoaded', () => theme.init());
 
 document.addEventListener('DOMContentLoaded', () => {
   const menuBtn = document.querySelector('.menu-button');

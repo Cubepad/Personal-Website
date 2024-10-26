@@ -27,7 +27,6 @@ footer {
 
 .info h2 {
   font-size: 32px;
-  margin-bottom: 6px;
 }
 
 .info hr {
@@ -116,6 +115,10 @@ footer {
     gap: 16px;
   }
 
+  .message-button {
+    margin: 0.75rem 0rem;
+  }
+
   .social-section {
     justify-content: space-around;
     margin: 0px 10px;
@@ -128,7 +131,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 36px;
   }
 
   .message-button {
@@ -141,7 +143,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 36px;
   }
 
   .message-button {
@@ -199,7 +200,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 36px;
   }
 
   .message-button {
@@ -237,7 +237,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 36px;
   }
 
   .message-button {

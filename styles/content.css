@@ -16,12 +16,6 @@
   transition: all 0.3s;
 }
 
-.projects p {
-  border-radius: 20px;
-  padding: 1.25rem 1.5rem;
-  transition: all 0.3s;
-}
-
 .about-me p,
 .projects p,
 .about-me-text-div h5 {
@@ -30,10 +24,18 @@
 
 .about-me .subheading,
 .projects .subheading {
-  margin-bottom: 20px;
+
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--title-color);
+}
+
+.about-me .subheading {
+  margin-bottom: 1.5rem;
+}
+
+.projects .subheading {
+  margin-bottom: 3rem;
 }
 
 .about-me-icon {
@@ -52,13 +54,13 @@
 @media (max-width: 380px) {
   .about-me,
   .projects {
-    margin: 80px 0;
+    margin: 80px 2%;
   }
 }
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 6rem 0rem 10rem;
+    padding: 4rem 0rem 12rem;
   }
 
   .about-me-flexbox {
@@ -66,7 +68,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
 
   .placeholder-img {
@@ -79,7 +81,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 0;
+    margin-top: 1rem;
   }
 
   .hero-section h2 {
@@ -274,11 +277,6 @@
     width: 90%;
     align-self: center;
   }
-
-  .projects p {
-    padding: 1.25rem 1.5rem;
-    width: 70%;
-  }
 }
 
 @media (min-width: 1921px) {
@@ -362,9 +360,6 @@
     width: 90%;
     align-self: center;
   }
-
-  .projects p {
-    padding: 1.25rem 1.5rem;
-    width: 60%;
-  }
 }
+
+

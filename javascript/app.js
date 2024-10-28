@@ -18,6 +18,8 @@ const observer = new IntersectionObserver(
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
+
+// Dark and Light Theme
 const theme = {
   btn: document.getElementById("theme_btn"),
   logo: document.getElementById("logo"),
@@ -48,6 +50,7 @@ const theme = {
 
 document.addEventListener('DOMContentLoaded', () => theme.init());
 
+// Mobile Menu
 document.addEventListener('DOMContentLoaded', () => {
   const menuBtn = document.querySelector('.menu-button');
   const dropdownContent = document.querySelector('.dropdown-content');

@@ -66,6 +66,11 @@
 
   .project-card {
     flex-direction: column;
+    transition: none;
+  }
+
+  .project-card:hover {
+    transform: translateY(0px);
   }
 
   .project-info {

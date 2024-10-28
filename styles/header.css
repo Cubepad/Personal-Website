@@ -221,6 +221,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.625rem;
     width: 132px;
     padding: 6px 0px;
   }
@@ -245,10 +246,6 @@
 
   .theme-button:hover .theme-icon {
     color: var(--title-color);
-  }
-
-  .dropdown-icon {
-    margin-right: 10px;
   }
 
   .dropdown-content a:hover {
@@ -360,6 +357,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.625rem;
     width: 132px;
     padding: 6px 0px;
   }
@@ -384,10 +382,6 @@
 
   .theme-button:hover .theme-icon {
     color: var(--title-color);
-  }
-
-  .dropdown-icon {
-    margin-right: 10px;
   }
 
   .dropdown-content a:hover {

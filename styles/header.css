@@ -2,12 +2,12 @@
   .header {
     height: 48px;
     position: fixed;
-    top: 20px;
+    top: 1.25rem;
     left: 2%;
     right: 2%;
     border: 1px var(--border-color) solid;
     border-radius: 24px;
-    padding: 12px;
+    padding: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,7 +31,7 @@
   }
 
   .menu-icon {
-    font-size: 44px;
+    font-size: 2.75rem;
     color: var(--button-text-color);
     transition: color 0.3s;
     user-select: none;
@@ -53,7 +53,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 14px;
+    gap: 0.875rem;
   }
 
   .right-section {
@@ -69,25 +69,25 @@
     background-color: var(--button-background-color);
     z-index: 1;
     right: 0;
-    top: 75px;
+    top: 4.6875rem;
     border-radius: 16px;
     border: 1px var(--border-color) solid;
-    padding: 6px;
+    padding: 0.375rem;
     width: 160px;
     transition: all 0.3s;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 0.375rem;
   }
 
   .dropdown-content a {
-    padding: 16px;
+    padding: 1rem;
     border-radius: 10px;
     transition: all 0.3s;
     color: var(--button-text-color);
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
   }
 
   .theme-button {
@@ -101,7 +101,7 @@
   }
 
   .theme-icon {
-    font-size: 44px;
+    font-size: 2.75rem;
     color: var(--button-text-color);
     transition: color 0.3s;
   }
@@ -135,12 +135,12 @@
   .header {
     height: 42px;
     position: fixed;
-    top: 14px;
+    top: 0.875rem;
     left: 3%;
     right: 3%;
     border: 1px var(--border-color) solid;
     border-radius: 24px;
-    padding: 12px;
+    padding: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -153,7 +153,7 @@
   }
 
   .logo {
-    width: 48px;
+    width: 3rem;
     height: auto;
   }
 
@@ -164,7 +164,7 @@
   }
 
   .menu-icon {
-    font-size: 48px;
+    font-size: 3rem;
     color: var(--button-text-color);
     transition: color 0.3s;
   }
@@ -196,7 +196,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 14px;
+    gap: 0.875rem;
   }
 
   .right-section {
@@ -208,10 +208,10 @@
     background-color: var(--button-background-color);
     border-radius: 12px;
     border: 1px var(--border-color) solid;
-    padding: 4px;
+    padding: 0.25rem;
     transition: all 0.3s;
     display: flex;
-    gap: 6px;
+    gap: 0.375rem;
   }
 
   .dropdown-content a {
@@ -222,8 +222,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.625rem;
-    width: 132px;
-    padding: 6px 0px;
+    padding: 0.375rem 1.2rem;
   }
 
   .theme-button {
@@ -235,11 +234,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4px 6px;
+    padding: 0.25rem 0.375rem;
   }
 
   .theme-icon {
-    font-size: 36px;
+    font-size: 2.25rem;
     color: var(--button-text-color);
     transition: color 0.3s;
   }
@@ -267,14 +266,14 @@
   .header {
     height: 38px;
     position: fixed;
-    top: 14px;
+    top: 0.875rem;
     left: 5%;
     right: 5%;
     margin: 0 auto;
     max-width: 1600px;
     border: 1px var(--border-color) solid;
     border-radius: 24px;
-    padding: 12px;
+    padding: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -287,7 +286,7 @@
   }
 
   .logo {
-    width: 44px;
+    width: 2.75rem;
     height: auto;
   }
 
@@ -295,12 +294,12 @@
     display: flex;
     align-items: center;
     border-radius: 10px;
-    padding: 8px 6px;
+    padding: 0.5rem 0.375rem;
     transition: all 0.3s;
   }
 
   .menu-icon {
-    font-size: 48px;
+    font-size: 3rem;
     color: var(--button-text-color);
     transition: color 0.3s;
   }
@@ -332,7 +331,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 14px;
+    gap: 0.875rem;
   }
 
   .right-section {
@@ -344,10 +343,10 @@
     background-color: var(--button-background-color);
     border-radius: 12px;
     border: 1px var(--border-color) solid;
-    padding: 2px;
+    padding: 0.125rem;
     transition: all 0.3s;
     display: flex;
-    gap: 6px;
+    gap: 0.375rem;
   }
 
   .dropdown-content a {
@@ -358,8 +357,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.625rem;
-    width: 132px;
-    padding: 6px 0px;
+    padding: 0.375rem 1.2rem;
   }
 
   .theme-button {
@@ -371,11 +369,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4px 6px;
+    padding: 0.25rem 0.375rem;
   }
 
   .theme-icon {
-    font-size: 32px;
+    font-size: 2rem;
     color: var(--button-text-color);
     transition: color 0.3s;
   }

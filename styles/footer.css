@@ -100,7 +100,7 @@ footer {
   gap: 1.375rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .connect-section {
     flex-direction: column;
     justify-content: center;
@@ -173,7 +173,7 @@ footer {
 
   .message-button:hover span,
   .email:hover span {
-    transform: scale(1.1);
+    transform: none;
   }
 
   .social-icon:hover {

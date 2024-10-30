@@ -8,6 +8,28 @@
   align-items: center;
 }
 
+.hero-section h2 {
+  margin-bottom: 1.5rem;
+  color: var(--button-text-color);
+  font-weight: 400;
+}
+
+.hero-button {
+  background-color: var(--button-background-color);
+  border-radius: 0.75rem;
+  border: 1px var(--border-color) solid;
+  padding: 0.75rem 1rem;
+  color: var(--button-text-color);
+  font-size: 1.5rem;
+  transition: all 0.3s;
+  letter-spacing: -0.0375rem;
+}
+
+.hero-button:hover {
+  color: var(--title-color);
+  background-color: var(--button-hover);
+}
+
 .about-me-text-div div,
 .about-me-text p,
 .img-container {
@@ -24,7 +46,6 @@
 
 .about-me .subheading,
 .projects .subheading {
-
   text-align: center;
   font-size: 2.5rem;
   color: var(--title-color);
@@ -60,7 +81,12 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 3rem 0rem 13rem;
+    padding: 0rem 0rem 16rem;
+  }
+
+  .hero-button:hover {
+    color: var(--button-text-color);
+    background-color: var(--button-background-color);
   }
 
   .about-me-flexbox {

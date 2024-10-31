@@ -24,6 +24,7 @@ const theme = {
   btn: document.getElementById("theme_btn"),
   logo: document.getElementById("logo"),
   logoEnlarged: document.getElementById("logo_enlarged"),
+  heroImage: document.getElementById("hero_image"),
   
   toggle() {
     const isLight = document.body.classList.toggle("light-theme");
@@ -35,6 +36,7 @@ const theme = {
     this.logo.src = `logo/personal-logo-${isLight ? 'black' : 'white'}-no-detail.svg`;
     this.logoEnlarged.src = `logo/personal-logo-${isLight ? 'black' : 'white'}-no-detail${isLight ? '-outline' : '-v2'}.svg`;
     this.btn.textContent = `${isLight ? 'light' : 'dark'}_mode`;
+    this.heroImage.src = `images/hero-image${isLight ? '-light' : ''}.webp`;
   },
 
   init() {

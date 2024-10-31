@@ -30,6 +30,7 @@
 }
 
 .hero-button {
+  display: inline-block;
   background-color: var(--button-background-color);
   border-radius: 0.75rem;
   border: 1px var(--border-color) solid;
@@ -38,10 +39,10 @@
   font-size: 1.5rem;
   transition: all 0.3s;
   letter-spacing: -0.0375rem;
-  margin-bottom: 2rem;
 }
 
 .hero-button:hover {
+  transform: translateY(-2px);
   color: var(--title-color);
   background-color: var(--button-hover);
 }
@@ -50,7 +51,7 @@
   flex: 1;
   width: fit-content;
   border-radius: 12px;
-  max-width: 500px;
+  border: 1px var(--border-color) solid;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,6 +124,10 @@
 
   .hero-text h1::after {
     justify-self: center;
+  }
+
+  .hero-image-container {
+    max-width: 500px;
   }
 
   .hero-button:hover {
@@ -198,6 +203,14 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  .hero-text {
+    flex: 2;
+  }
+
+  .hero-image-container {
+    flex: 3;
+  }
+
   .about-me-flexbox {
     display: flex;
     align-items: center;

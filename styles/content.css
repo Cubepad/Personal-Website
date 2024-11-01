@@ -57,6 +57,11 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
+  transition: all 0.3s;
+}
+
+.hero-image-container:hover{
+  transform: translateY(-5px);
 }
 
 .hero-image {
@@ -132,8 +137,13 @@
   }
 
   .hero-button:hover {
+    transform: none;
     color: var(--button-text-color);
     background-color: var(--button-background-color);
+  }
+
+  .hero-image-container:hover{
+    transform: none;
   }
 
   .about-me-flexbox {

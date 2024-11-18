@@ -21,7 +21,7 @@
 }
 
 .logo {
-  width: 2.75rem;
+  width: 2.65rem;
   height: auto;
 }
 
@@ -33,32 +33,18 @@
   transition: all 0.3s;
 }
 
-.menu-icon {
-  font-size: 3rem;
-  color: var(--button-text-color);
-  transition: color 0.3s;
-}
-
 .menu-button {
-  background-color: var(--button-background-color);
-  transition: background-color 1s;
-  border-radius: 10px;
-  border: 1px var(--border-color) solid;
-  transition: background-color 0.3s;
+  border: none;
   cursor: pointer;
   right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   display: none;
 }
 
-.menu-button:hover,
 .theme-button:hover {
   background-color: var(--button-hover);
 }
 
-.menu-button:hover .menu-icon {
+.menu-button:hover .menu-icon:hover {
   color: var(--title-color);
 }
 
@@ -108,7 +94,7 @@
 }
 
 .theme-icon {
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: var(--button-text-color);
   transition: color 0.3s;
 }
@@ -140,30 +126,15 @@
     right: 2%;
   }
 
-  .logo {
-    width: 2.75rem;
-    height: auto;
-  }
-
-  .logo-container {
-    display: flex;
-    align-items: center;
-    transition: all 0.3s;
-  }
-
   .menu-icon {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: var(--button-text-color);
     transition: color 0.3s;
     user-select: none;
   }
 
   .menu-button {
-    background-color: var(--button-background-color);
-    transition: background-color 1s;
-    border-radius: 12px;
-    border: 1px var(--border-color) solid;
-    transition: background-color 0.3s;
+    background-color: transparent;
     cursor: pointer;
     display: flex;
     align-items: center;

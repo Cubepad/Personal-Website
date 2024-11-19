@@ -3,6 +3,11 @@
   margin: 0 auto;
 }
 
+.projects-grid {
+  display: grid;
+  row-gap: 2.5rem;
+}
+
 
 .project-title {
   font-size: 1.875rem;
@@ -36,7 +41,15 @@
 }
 
 .project-image-container {
+  display: flex;
+  align-items: center;
   max-width: 500px;
+}
+
+.project-image-container a {
+  display: block; 
+  line-height: 0; 
+  font-size: 0;
 }
 
 .project-image {

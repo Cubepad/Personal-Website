@@ -35,7 +35,7 @@ const theme = {
   updateUI(isLight) {
     this.logo.src = `logo/personal-logo-${isLight ? 'black' : 'white'}-no-detail.svg`;
     this.logoEnlarged.src = `logo/personal-logo-${isLight ? 'black' : 'white'}-no-detail${isLight ? '-outline' : '-v2'}.svg`;
-    this.btn.textContent = `${isLight ? 'light' : 'dark'}_mode`;
+    this.btn.textContent = `${isLight ? 'dark' : 'light'}_mode`;
     this.heroImage.src = `images/hero-image${isLight ? '-light' : ''}.webp`;
   },
 

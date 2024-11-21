@@ -28,6 +28,7 @@ html {
   --button-text-color: rgba(255, 255, 255, 0.5);
   --button-hover: rgb(51, 51, 51);
   --header-background-color: rgba(18, 18, 18, 0.7);
+  --blur-button-background-color: rgb(35, 35, 35, 0.2);
   --background-img: linear-gradient(
     to bottom right,
     rgb(23, 23, 26),
@@ -45,6 +46,7 @@ html {
   --button-text-color: rgba(0, 0, 0, 0.75);
   --button-hover: rgb(255, 255, 255);
   --header-background-color: rgba(211, 210, 210, 0.5);
+  --blur-button-background-color: rgb(211, 210, 210, 0.2);
   --background-img: linear-gradient(
     to bottom right,
     rgb(192, 200, 240),

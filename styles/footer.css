@@ -72,7 +72,7 @@ footer {
 }
 
 .social-icon {
-  color: var(--text-color);
+  color: var(--button-text-color);
   transition: all 0.15s;
   display: block;
   font-size: 2rem;

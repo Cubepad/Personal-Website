@@ -1,5 +1,5 @@
 .projects-grid {
-  max-width: 1200px;
+  max-width: 960px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
@@ -108,5 +108,17 @@
   .project-card:hover,
   .cta-button:hover {
     transform: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px)  {
+  .projects-grid {
+    max-width: 780px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .projects-grid {
+    max-width: 1280px;
   }
 }

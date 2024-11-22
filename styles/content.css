@@ -19,7 +19,7 @@
   width: 80px;
   height: 4px;
   background-color: var(--title-color);
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   border-radius: 10px;
 }
 
@@ -51,7 +51,7 @@
 .hero-image-container {
   flex: 1;
   width: fit-content;
-  border-radius: 12px;
+  border-radius: 1rem;
   border: 1px var(--border-color) solid;
   display: flex;
   align-items: center;

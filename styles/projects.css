@@ -24,11 +24,6 @@
   text-decoration: underline;
 }
 
-
-.project-card:hover {
-  transform: translateY(-10px);
-}
-
 .project-image-container {
   border-radius: 1rem 1rem 0 0;
   overflow: hidden;
@@ -111,7 +106,6 @@
     padding: 0 1rem;
   }
 
-  .project-card:hover,
   .cta-button:hover {
     transform: none;
   }

@@ -27,6 +27,7 @@
   margin-bottom: 2rem;
   color: var(--button-text-color);
   font-weight: 400;
+  text-wrap: balance;
 }
 
 .hero-button {
@@ -78,6 +79,10 @@
   transition: all 0.3s;
 }
 
+.about-me p {
+  text-wrap: pretty;
+}
+
 .about-me p,
 .projects p,
 .about-me-text-div h4 {
@@ -85,7 +90,8 @@
 }
 
 .about-me .subheading,
-.projects .subheading {
+.projects .subheading,
+.skills .subheading {
   text-align: center;
   font-size: 2.5rem;
   color: var(--title-color);
@@ -97,6 +103,10 @@
 
 .projects .subheading {
   margin-bottom: 3rem;
+}
+
+.skills .subheading {
+  margin-bottom: 2.25rem;
 }
 
 .about-me-icon {
@@ -114,7 +124,8 @@
 
 @media (max-width: 380px) {
   .about-me,
-  .projects {
+  .projects,
+  .skills {
     margin: 80px 2%;
   }
 }
@@ -209,7 +220,8 @@
     font-weight: normal;
   }
 
-  .projects {
+  .projects,
+  .skills {
     padding: 6rem 0rem;
   }
 }
@@ -421,7 +433,8 @@
   }
 
   .about-me .subheading,
-  .projects .subheading {
+  .projects .subheading,
+  .skills .subheading {
     font-size: 3.5rem;
   }
 

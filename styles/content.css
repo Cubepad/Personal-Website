@@ -80,7 +80,7 @@
 
 .about-me p,
 .projects p,
-.about-me-text-div h5 {
+.about-me-text-div h4 {
   color: var(--text-color);
 }
 
@@ -204,7 +204,7 @@
     padding: 0.75rem 0.5rem;
   }
 
-  .about-me-text-div h5 {
+  .about-me-text-div h4 {
     text-align: center;
     font-weight: normal;
   }
@@ -281,7 +281,7 @@
     align-self: center;
   }
 
-  .about-me-text-div h5 {
+  .about-me-text-div h4 {
     text-align: center;
     font-weight: normal;
     font-size: 0.875rem;
@@ -331,7 +331,7 @@
     font-size: 2rem;
   }
 
-  .about-me-text-div h5 {
+  .about-me-text-div h4 {
     text-align: center;
     font-size: 1.125rem;
     font-weight: normal;
@@ -414,7 +414,7 @@
     font-size: 2.25rem;
   }
 
-  .about-me-text-div h5 {
+  .about-me-text-div h4 {
     text-align: center;
     font-size: 1.375rem;
     font-weight: normal;

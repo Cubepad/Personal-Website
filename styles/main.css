@@ -29,6 +29,7 @@ html {
   --button-hover: rgb(51, 51, 51);
   --header-background-color: rgba(18, 18, 18, 0.7);
   --blur-button-background-color: rgb(35, 35, 35, 0.2);
+  --social-icon-color: rgb(131, 131, 131);
   --background-img: linear-gradient(
     to bottom right,
     rgb(23, 23, 26),
@@ -47,6 +48,7 @@ html {
   --button-hover: rgb(255, 255, 255);
   --header-background-color: rgba(211, 210, 210, 0.5);
   --blur-button-background-color: rgb(211, 210, 210, 0.2);
+  --social-icon-color: rgb(64,64,64);
   --background-img: linear-gradient(
     to bottom right,
     rgb(192, 200, 240),
@@ -83,6 +85,7 @@ html {
   .about-me,
   .projects,
   .skills,
+  .services,
   footer {
     margin: 0% 2%;
   }
@@ -101,6 +104,7 @@ html {
   .about-me,
   .projects,
   .skills,
+  .services,
   footer {
     margin: 0px 6%;
   }
@@ -119,6 +123,7 @@ html {
   .about-me,
   .projects,
   .skills,
+  .services,
   footer {
     margin: 0% 10%;
   }
@@ -137,6 +142,7 @@ html {
   .about-me,
   .projects,
   .skills,
+  .services,
   footer {
     margin: 0% 10%;
   }
@@ -155,6 +161,7 @@ html {
   .about-me,
   .projects,
   .skills,
+  .services,
   footer {
     margin: 0% 10%;
   }

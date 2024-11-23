@@ -91,7 +91,8 @@
 
 .about-me .subheading,
 .projects .subheading,
-.skills .subheading {
+.skills .subheading,
+.services .subheading {
   text-align: center;
   font-size: 2.5rem;
   color: var(--title-color);
@@ -105,7 +106,8 @@
   margin-bottom: 3rem;
 }
 
-.skills .subheading {
+.skills .subheading,
+.services .subheading {
   margin-bottom: 2.25rem;
 }
 
@@ -114,7 +116,8 @@
   user-select: none;
 }
 
-.projects {
+.projects,
+.services {
   padding: 4rem 0rem 12rem;
   display: flex;
   flex-direction: column;
@@ -349,7 +352,9 @@
   }
 
   .about-me .subheading,
-  .projects .subheading {
+  .projects .subheading,
+  .skills .subheading,
+  .services .subheading {
     font-size: 3rem;
   }
 
@@ -433,7 +438,8 @@
 
   .about-me .subheading,
   .projects .subheading,
-  .skills .subheading {
+  .skills .subheading,
+  .services .subheading {
     font-size: 3.5rem;
   }
 

@@ -22,6 +22,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 // Dark and Light Theme
 const theme = {
   btn: document.getElementById("theme_btn"),
+  btnIcon: document.getElementById("theme_btn_icon"),
   logo: document.getElementById("logo"),
   logoEnlarged: document.getElementById("logo_enlarged"),
   heroImage: document.getElementById("hero_image"),
@@ -35,7 +36,7 @@ const theme = {
   updateUI(isLight) {
     this.logo.src = `logo/personal-logo-${isLight ? 'black' : 'white'}-no-detail.svg`;
     this.logoEnlarged.src = `logo/personal-logo-${isLight ? 'black' : 'white'}-no-detail${isLight ? '-outline' : '-v2'}.svg`;
-    this.btn.textContent = `${isLight ? 'dark' : 'light'}_mode`;
+    this.btnIcon.textContent = `${isLight ? 'dark' : 'light'}_mode`;
     this.heroImage.src = `images/hero-image${isLight ? '-light' : ''}.webp`;
   },
 

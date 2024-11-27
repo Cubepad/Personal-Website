@@ -20,21 +20,17 @@ html {
 }
 
 :root {
-  --background-color: rgb(18, 18, 18);
-  --border-color: rgb(39, 39, 39);
-  --button-background-color: rgb(35, 35, 35);
-  --title-color: rgb(255, 255, 255);
-  --text-color: rgba(255, 255, 255, 0.6);
-  --button-text-color: rgba(255, 255, 255, 0.5);
-  --button-hover: rgb(51, 51, 51);
-  --header-background-color: rgba(18, 18, 18, 0.7);
-  --blur-button-background-color: rgb(35, 35, 35, 0.2);
-  --social-icon-color: rgb(131, 131, 131);
-  --background-img: linear-gradient(
-    to bottom right,
-    rgb(23, 23, 26),
-    rgb(2, 2, 2)
-  );
+  --background-color: rgb(10, 17, 24);
+  --border-color: rgba(151, 203, 255, 0.075);
+  --button-background-color: rgb(23, 32, 41);
+  --title-color: rgb(162, 209, 255);
+  --text-color: rgba(188, 220, 252, 0.75);
+  --button-text-color: rgba(172, 213, 253, 0.6);
+  --button-hover: rgb(31 47 63);
+  --header-background-color: rgba(10, 17, 24, 0.8);
+  --blur-button-background-color: rgb(23, 32, 41, 0.2);
+  --social-icon-color: rgb(92, 136, 172);
+  --background-img: linear-gradient(to bottom right, rgb(8 16 24), rgb(4 12 28));
   --header-height: 90px;
 }
 

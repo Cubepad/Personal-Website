@@ -96,11 +96,15 @@
 .theme-icon {
   font-size: 1.5rem;
   color: var(--button-text-color);
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.15s;
 }
 
 .theme-button:hover .theme-icon {
   color: var(--title-color);
+}
+
+.theme-button:active .theme-icon {
+  transform: scale(0.85);
 }
 
 .dropdown-content a:hover {
@@ -115,6 +119,11 @@
 .dropdown-content a:hover span {
   scale: 1.1;
   transform: translateY(2px);
+}
+
+.dropdown-content a:active span {
+  scale: 1;
+  transform: translateY(0px);
 }
 
 

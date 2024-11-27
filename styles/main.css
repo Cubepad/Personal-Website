@@ -8,6 +8,7 @@ body {
   min-height: 100%;
   margin: 0;
   min-width: 320px;
+  -webkit-tap-highlight-color: var(--tap-highlight-color);
 }
 
 html {
@@ -17,6 +18,7 @@ html {
 
 * {
   font-family: Inter, Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 :root {
@@ -36,6 +38,7 @@ html {
     rgb(2, 2, 2)
   );
   --header-height: 90px;
+  --tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 
 .light-theme {
@@ -55,6 +58,7 @@ html {
     rgb(216, 216, 216)
   );
   --header-height: 90px;
+  --tap-highlight-color: rgba(64, 64, 64, 0.15);
 }
 
 .hidden {

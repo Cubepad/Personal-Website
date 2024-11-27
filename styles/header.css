@@ -1,5 +1,4 @@
 .header {
-  height: 38px;
   position: fixed;
   top: 0.875rem;
   left: 5%;
@@ -8,7 +7,7 @@
   max-width: 1600px;
   border: 1px var(--border-color) solid;
   border-radius: 24px;
-  padding: 0.75rem;
+  padding: 0.45rem 0.7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,6 +37,7 @@
   cursor: pointer;
   right: 0;
   display: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .menu-button:hover .menu-icon:active {
@@ -88,6 +88,7 @@
   align-items: center;
   justify-content: center;
   padding: 0.375rem;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .theme-icon {
@@ -132,6 +133,11 @@
     scale: 1.1;
     transform: translateY(2px);
   }
+
+  .dropdown-content a:active span {
+    scale: 0.95;
+    transform: translateY(0px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -173,7 +179,7 @@
     border-radius: 16px;
     border: 1px var(--border-color) solid;
     padding: 0.375rem;
-    width: 142px;
+    width: 148px;
     transition: all 0.3s;
     display: flex;
     flex-direction: column;

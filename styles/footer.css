@@ -41,6 +41,7 @@ footer {
   color: var(--button-text-color);
   padding: 0.5rem 0.625rem;
   font-size: 1rem;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .message-button span,
@@ -94,14 +95,10 @@ footer {
 }
 
 @media (min-width: 769px) {
-  .email:hover {
-    color: var(--title-color);
-    background-color: var(--button-hover);
-  }
-
+  .email:hover,
   .message-button:hover {
-    background-color: var(--button-hover);
     color: var(--title-color);
+    background-color: var(--button-hover);
   }
 
   .message-button:hover span,
@@ -152,7 +149,8 @@ footer {
     align-items: center;
   }
 
-  .message-button {
+  .message-button,
+  .email {
     padding: 0.75rem;
   }
 
@@ -166,7 +164,6 @@ footer {
 
   .email h4 {
     font-size: 1rem;
-    font-weight: normal;
   }
 
   .connect {
@@ -177,9 +174,8 @@ footer {
 @media (min-width: 1025px) and (max-width: 1920px) {
   footer {
     width: 70%;
-    max-width: 950px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1020px;
+    margin: 0 auto 1.75rem;
   }
 
   .message-container {
@@ -188,7 +184,8 @@ footer {
     align-items: center;
   }
 
-  .message-button {
+  .message-button,
+  .email {
     padding: 0.75rem;
   }
 
@@ -202,7 +199,6 @@ footer {
 
   .email h4 {
     font-size: 1rem;
-    font-weight: normal;
   }
 
   .connect {
@@ -214,9 +210,8 @@ footer {
   footer {
     padding: 1.25rem 1.5rem;
     width: 60%;
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1280px;
+    margin:  0 auto 1.75rem;
   }
 
   .message-container {
@@ -225,7 +220,8 @@ footer {
     align-items: center;
   }
 
-  .message-button {
+  .message-button,
+  .email {
     padding: 1rem;
     font-size: 1.25rem;
   }
@@ -240,7 +236,6 @@ footer {
 
   .email h4 {
     font-size: 1.25rem;
-    font-weight: normal;
   }
 
   .connect {

@@ -103,6 +103,10 @@
   transform: translateY(-3px);
 }
 
+.cta-button:active {
+  transform: translate(0px);
+}
+
 
 @media (max-width: 768px) {
   .projects-grid {

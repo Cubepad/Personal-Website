@@ -49,6 +49,10 @@
   background-color: var(--button-hover);
 }
 
+.hero-button:active {
+  transform: translate(0px);
+}
+
 .hero-image-container {
   flex: 1;
   width: fit-content;

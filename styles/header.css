@@ -40,12 +40,9 @@
   display: none;
 }
 
-.theme-button:hover {
-  background-color: var(--button-hover);
-}
-
-.menu-button:hover .menu-icon:hover {
+.menu-button:hover .menu-icon:active {
   color: var(--title-color);
+  transform: scale(0.85);
 }
 
 .left-section {
@@ -99,26 +96,17 @@
   transition: color 0.3s, transform 0.15s;
 }
 
-.theme-button:hover .theme-icon {
-  color: var(--title-color);
+.theme-button:active {
+  background-color: var(--button-hover);
 }
 
 .theme-button:active .theme-icon {
-  transform: scale(0.85);
-}
-
-.dropdown-content a:hover {
-  background-color: var(--button-hover);
   color: var(--title-color);
+  transform: scale(0.85);
 }
 
 .dropdown-content span {
   transition: all 0.15s;
-}
-
-.dropdown-content a:hover span {
-  scale: 1.1;
-  transform: translateY(2px);
 }
 
 .dropdown-content a:active span {
@@ -126,7 +114,25 @@
   transform: translateY(0px);
 }
 
+@media (min-width: 769px) {
+  .theme-button:hover {
+    background-color: var(--button-hover);
+  }
 
+  .theme-button:hover .theme-icon {
+    color: var(--title-color);
+  }
+
+  .dropdown-content a:hover {
+    background-color: var(--button-hover);
+    color: var(--title-color);
+  }
+
+  .dropdown-content a:hover span {
+    scale: 1.1;
+    transform: translateY(2px);
+  }
+}
 
 @media (max-width: 768px) {
   .header {
@@ -138,7 +144,7 @@
   .menu-icon {
     font-size: 1.75rem;
     color: var(--button-text-color);
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.15s;
     user-select: none;
   }
 
@@ -190,24 +196,6 @@
     border-radius: 12px;
   }
 
-  .theme-button:hover {
-    background-color: var(--button-background-color);
-  }
-
-  .theme-button:hover .theme-icon {
-    color: var(--button-text-color);
-  }
-
-  .dropdown-content a:hover {
-    background-color: var(--button-background-color);
-    color: var(--button-text-color);
-  }
-
-  .dropdown-content a:hover span {
-    transform: none;
-    scale: 1;
-  }
-
   .dropdown-content.active {
     visibility: visible;
     opacity: 1;
@@ -218,6 +206,3 @@
     color: var(--title-color);
   }
 }
-
-
-

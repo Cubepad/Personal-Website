@@ -79,7 +79,7 @@ footer > * {
 .message-button:active {
   background-color: var(--button-hover);
   color: var(--title-color);
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 .email:active span,

@@ -77,3 +77,60 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.dropdown-content a');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.getAttribute('id');
+        const link = document.querySelector(`.dropdown-content a[href="#${id}"]`);
+
+        if (entry.isIntersecting) {
+          navLinks.forEach((navLink) => navLink.classList.remove('active'));
+          link.classList.add('active');
+        }
+      });
+    },
+    {
+      root: null, // Viewport as the container
+      threshold: 0.5, // Trigger when 50% of the section is visible
+    }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('section'); // Select all sections
+  const header = document.querySelector('.header');
+
+  // Set up an IntersectionObserver to watch all sections
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Check if the current section is #home
+          if (entry.target.id === 'home') {
+            header.style.maxWidth = '1280px'; // Reset to default width for #home
+          } else {
+            header.style.maxWidth = '760px'; // Set to 860px for all other sections
+          }
+        }
+      });
+    },
+    {
+      root: null, // Observe in the viewport
+      threshold: 0.4, // Trigger when even a small portion of the section is visible
+    }
+  );
+
+  // Observe each section
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+});
+

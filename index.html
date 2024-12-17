@@ -46,46 +46,55 @@
             <img class="logo theme-image" src="logo/logo-black.svg" alt="An abstract letter D Logo which represents the D in David" id="logo">
           </div>
         </a>
+      </div>
+      <nav class="center-section">
+        <div class="dropdown-content">
+          <a href="#about-me">
+            <span class="material-symbols-rounded dropdown-icon icon" translate="no">
+              person
+            </span> 
+            About Me
+          </a>
+          <a href="#skills">
+            <span class="material-symbols-rounded dropdown-icon icon" translate="no">
+              lightbulb_2
+            </span> 
+            Skills
+          </a>
+          <a href="#projects">
+            <span class="material-symbols-rounded dropdown-icon icon" translate="no">
+              folder
+            </span> 
+            Projects
+          </a>
+          <a href="#services">
+            <span class="material-symbols-rounded dropdown-icon icon" translate="no">
+              design_services
+            </span> 
+            Services
+          </a>
+          <a href="#contact">
+            <span class="material-symbols-rounded dropdown-icon icon" translate="no">
+              contact_page
+            </span>
+            Contact
+          </a>
+        </div>
+      </nav>
+      <div class="right-section">
         <button class="theme-button" id="theme_btn">
-          <span class="material-symbols-rounded theme-icon icon" id="theme_btn_icon"  translate="no">
+          <span class="material-symbols-rounded theme-icon icon" id="theme_btn_icon" translate="no">
             dark_mode
           </span> 
         </button>
+        <button class="menu-button">
+          <span class="material-symbols-rounded menu-icon icon" translate="no">
+            menu
+          </span> 
+        </button>
       </div>
-      <nav class="right-section">
-          <button class="menu-button">
-            <span class="material-symbols-rounded menu-icon icon"  translate="no">
-              menu
-            </span> 
-          </button>
-          <div class="dropdown-content">
-            <a href="#home">
-              <span class="material-symbols-rounded dropdown-icon icon" translate="no">
-                Home
-              </span>
-              Home
-            </a>
-            <a href="#about-me">
-              <span class="material-symbols-rounded dropdown-icon icon" translate="no">
-                person
-              </span> 
-              About Me
-            </a>
-            <a href="#projects">
-              <span class="material-symbols-rounded dropdown-icon icon" translate="no">
-                folder
-              </span> 
-              Projects
-            </a>
-            <a href="#contact">
-              <span class="material-symbols-rounded dropdown-icon icon" translate="no">
-                contact_page
-              </span>
-              Contact
-            </a>
-          </div>
-      <nav>
     </header>
+    
 
     <main class="content">
       <section id="home" class="hero-section hidden">
@@ -204,17 +213,23 @@
               </a>
             </div>
             <div class="project-info">
-              <a href="https://pureride.pages.dev" target="_blank" aria-label="Check out the PureRide Website">
+              <div class="project-text">
                 <h3 class="project-title">PureRide Services</h3>
-              </a>
-              <p>
-                PureRide provides expert bike service and repair with professional-grade, affordable options tailored for the community.
-              </p>
-              <div class="tech-stack">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
+                <p>
+                  PureRide provides expert bike service and repair with professional-grade, affordable options tailored for the community.
+                </p>
+                <div class="tech-stack">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
               </div>
+              <a href="https://pureride.pages.dev" target="_blank" aria-label="Check out the PureRide Website" class="visit-button">
+                Visit Site
+                <span class="material-symbols-rounded icon" translate="no">
+                  arrow_right_alt
+                </span> 
+              </a>
             </div>
           </div>
       
@@ -225,22 +240,33 @@
               </a>
             </div>
             <div class="project-info">
-              <a href="https://cubepad.pages.dev" target="_blank" aria-label="Check out the Cubepad Website">
+                <div class="project-text">
                 <h3 class="project-title">Cubepad</h3>
-              </a>
-              <p>
-                Cubepad is a comprehensive guide designed to teach people how to solve the cube in a clear, engaging way, with interactive tutorials.
-              </p>
-              <div class="tech-stack">
-                <span>TypeScript</span>
-                <span>React.js</span>
-                <span>Cubing.js</span>
-                <span>Mantine UI Library</span>
+                <p>
+                  Cubepad is a comprehensive guide designed to teach people how to solve the cube in a clear, engaging way, with interactive tutorials.
+                </p>
+                <div class="tech-stack">
+                  <span>TypeScript</span>
+                  <span>React.js</span>
+                  <span>Cubing.js</span>
+                  <span>Mantine UI Library</span>
+                </div>
               </div>
+              <a href="https://cubepad.pages.dev" target="_blank" aria-label="Check out the PureRide Website" class="visit-button">
+                Visit Site
+                <span class="material-symbols-rounded icon" translate="no">
+                  arrow_right_alt
+                </span> 
+              </a>
             </div>
           </div>
         </div>
-        <a href="#" class="cta-button">View More Projects</a>
+        <a href="#" class="cta-button">
+          View More Projects
+          <span class="material-symbols-rounded icon" translate="no">
+            arrow_right_alt
+          </span> 
+        </a>
       </section>  
       
       <section id="services" class="services hidden">
@@ -250,7 +276,7 @@
             <div class="service-icon">
               <svg  xmlns="http://www.w3.org/2000/svg"  width="48"  height="48"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" /></svg>
             </div>
-            <h4 class="service-title">Web Development</h4>
+            <h3 class="service-title">Web Development</h3>
             <p class="service-description">
               Creating responsive, modern websites with clean code that precisely match your objectives.
             </p>
@@ -259,7 +285,7 @@
             <div class="service-icon">
               <svg  xmlns="http://www.w3.org/2000/svg"  width="48"  height="48"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brush"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21v-4a4 4 0 1 1 4 4h-4" /><path d="M21 3a16 16 0 0 0 -12.8 10.2" /><path d="M21 3a16 16 0 0 1 -10.2 12.8" /><path d="M10.6 9a9 9 0 0 1 4.4 4.4" /></svg>
             </div>
-            <h4 class="service-title">Web Design</h4>
+            <h3 class="service-title">Web Design</h3>
             <p class="service-description">
               Designing visually appealing and user-friendly interfaces tailored specifically to your unique needs.            </p>
           </div>

@@ -6,7 +6,7 @@ A modern, responsive portfolio website built to showcase my projects and profess
 
 - **Responsive Design**: Fully responsive layout that adapts to all screen sizes
 - **Theme Switching**: Toggle between dark and light themes
-- **Smooth Animations**: Subtle fade-in animations for section transitions
+- **Smooth Animations**: Subtle fade-in and elastic bouncy animations for section transitions
 - **Modern UI Components**:
   - Fixed header with navigation
   - Hamburger menu for mobile
@@ -22,7 +22,7 @@ A modern, responsive portfolio website built to showcase my projects and profess
 - Vanilla JavaScript
 - Google Material Symbols
 - SVG Graphics
-- Inter Font Family
+- Geist Font Family
 
 ## 📂 Project Structure
 
@@ -85,7 +85,6 @@ Update the content in `index.html` to add your personal information, projects, a
 - Mobile: Up to 768px
 - Tablet: 769px to 1024px
 - Desktop: 1025px and above
-- Large Desktop: 1520px and above
 - Extra Large: 1920px and above
 
 ## 🔮 Future Enhancements

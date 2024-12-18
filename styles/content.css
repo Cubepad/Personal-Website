@@ -150,13 +150,20 @@
   user-select: none;
 }
 
-.projects,
-.services {
-  padding: 6rem 0rem 12rem;
+.services,
+.projects {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.services {
+  padding: 6rem 0rem 12rem;
+}
+
+.projects {
+  padding: 10rem 0rem 8rem;
 }
 
 @media (max-width: 380px) {

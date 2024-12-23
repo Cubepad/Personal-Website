@@ -183,8 +183,15 @@
     align-items: center;
   }
 
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .hero-text h1::after {
-    justify-self: center;
+    margin: 0.5rem auto 0 auto;
   }
 
   .hero-image-container {

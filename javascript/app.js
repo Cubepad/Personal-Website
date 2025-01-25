@@ -134,3 +134,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+// Set the start date when you began web development
+const startDate = new Date('2024-07-01'); // Replace with your actual start date (YYYY-MM-DD)
+
+// Get today's date
+const today = new Date();
+
+// Calculate the difference in months
+const monthsOfExperience =
+  (today.getFullYear() - startDate.getFullYear()) * 12 +
+  (today.getMonth() - startDate.getMonth());
+
+// Determine what to display
+let experienceText;
+if (monthsOfExperience < 12) {
+  experienceText = `${monthsOfExperience}+ month${monthsOfExperience !== 1 ? 's' : ''}`;
+} else {
+  const years = Math.floor(monthsOfExperience / 12);
+  experienceText = `${years}+ year${years > 1 ? 's' : ''}`;
+}
+
+// Update the text on your website
+document.getElementById('experience').textContent = experienceText;
+
+

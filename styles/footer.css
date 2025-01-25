@@ -51,7 +51,7 @@ footer > * {
 .message-button,
 .email {
   background-color: var(--button-background-color);
-  border-radius: 2rem;
+  border-radius: 1.25rem;
   border: 1px var(--border-color) solid;
   transition: transform 0.3s cubic-bezier(0.2, 2.0, 0.3, 1.8), background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;

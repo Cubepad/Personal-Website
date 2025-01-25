@@ -6,7 +6,7 @@
   margin: 0 auto;
   max-width: 1600px;
   border: 1px var(--border-color) solid;
-  border-radius: 32px;
+  border-radius: 1.5rem;
   padding: 0.5rem;
   display: flex;
   flex-direction: row;
@@ -42,7 +42,7 @@
 .logo-container {
   display: flex;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   transition: all 0.3s;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .dropdown-content a {
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   transition: background 0.15s, color 0.15s, transform 0.15s;
   color: var(--button-text-color);
   display: flex;
@@ -101,7 +101,7 @@
 
 .theme-button {
   background-color: var(--button-background-color);
-  border-radius: 24px;
+  border-radius: 1rem;
   border: 1px var(--border-color) solid;
   transition: background-color 0.3s;
   cursor: pointer;
@@ -220,7 +220,7 @@
   .right-section {
     background-color: var(--button-background-color);
     border: 1px var(--border-color) solid;
-    border-radius: 24px;
+    border-radius: 1rem;
   }
 
   .theme-button {

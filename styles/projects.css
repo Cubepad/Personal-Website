@@ -153,7 +153,7 @@
   background: var(--button-background-color);
   color: var(--button-text-color);
   font-size: 1.25rem;
-  border-radius: 2rem;
+  border-radius: 1.25rem;
   font-weight: 500;
   border: 1px solid var(--border-color);
   transition: transform 0.3s cubic-bezier(0.2, 2.0, 0.3, 1.8), color 0.3s ease, background-color 0.3s ease;

@@ -86,7 +86,7 @@
 .hero-image-container {
   flex: 1;
   width: fit-content;
-  border-radius: 1rem;
+  border-radius: 1.25rem;
   border: 1px var(--border-color) solid;
   display: flex;
   align-items: center;

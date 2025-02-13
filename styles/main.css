@@ -64,6 +64,20 @@ html {
     rgba(3, 64, 163, 0.11) 0%,
     rgba(36, 44, 88, 0.11) 100%
   );
+
+  --editor-bg: rgba(30, 30, 30, 0.8);
+  --editor-border: rgba(255, 255, 255, 0.1);
+  --editor-header-bg: rgba(45, 45, 45, 0.9);
+  --editor-header-border: rgba(255, 255, 255, 0.1);
+  --window-title-color: #888;
+  --editor-text-color: #d4d4d4;
+  --keyword-color: #569CD6;
+  --string-color: #CE9178;
+  --function-color: #DCDCAA;
+  --variable-color: #9CDCFE;
+  --control-red: #FF5F56;
+  --control-yellow: #FFBD2E;
+  --control-green: #27C93F;
 }
 
 .light-theme {
@@ -109,6 +123,20 @@ html {
     rgba(0, 93, 223, 0.1) 0%,
     rgba(192, 200, 240, 0.2) 100%
   );
+
+  --editor-bg: rgba(255, 255, 255, 0.85); /* Brighter and less gray */
+  --editor-border: rgba(0, 0, 0, 0.08); /* Softer border */
+  --editor-header-bg: rgba(240, 240, 240, 0.9); /* Slightly lighter */
+  --editor-header-border: rgba(0, 0, 0, 0.08); /* Less intense border */
+  --window-title-color: #444; /* Darker for better contrast */
+  --editor-text-color: #222; /* Slightly darker for readability */
+  --keyword-color: #1E40AF; /* Deep blue for emphasis */
+  --string-color: #B63E0E; /* Warmer, more readable red */
+  --function-color: #8B5A2B; /* Richer brown for functions */
+  --variable-color: #0056B3; /* More vibrant blue */
+  --control-red: #FF5F56;
+  --control-yellow: #FFBD2E;
+  --control-green: #27C93F;
 }
 
 .hidden {

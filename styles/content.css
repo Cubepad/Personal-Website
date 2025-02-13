@@ -85,20 +85,13 @@
 
 .hero-image-container {
   flex: 1;
-  width: fit-content;
-  border-radius: 1.25rem;
-  border: 1px var(--border-color) solid;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow: hidden;
-  transition: transform 0.3s cubic-bezier(0.2, 2.0, 0.3, 1.8);
 }
 
-.hero-image-container:hover{
-  transform: translateY(-8px);
-}
 
 .hero-image {
   width: 100%;

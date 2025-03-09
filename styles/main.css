@@ -24,45 +24,48 @@ html {
 :root {
   --background-color: rgb(18, 18, 18);
   --border-color: rgb(39, 39, 39);
-  --button-background-color: rgb(35, 35, 35);
+  --button-background-color: rgb(26, 26, 28);
   --title-color: rgb(255, 255, 255);
   --text-color: rgba(255, 255, 255, 0.6);
-  --button-text-color: rgba(255, 255, 255, 0.5);
-  --button-hover: rgb(51, 51, 51);
+  --button-text-color: rgba(255, 255, 255, 0.6);
+  --button-hover: rgb(30, 30, 32);
   --header-background-color: rgba(18, 18, 18, 0.7);
   --blur-button-background-color: rgb(35, 35, 35, 0.2);
   --social-icon-color: rgb(131, 131, 131);
-  --background-img: linear-gradient(
-    to bottom right,
-    rgb(23, 23, 26),
-    rgb(4, 4, 4)
+  --background-img: radial-gradient(
+    circle,
+    rgb(16, 16, 22) 10%,
+    rgb(4, 4, 8) 100%
   );
   --header-height: 90px;
   --tap-highlight-color: rgba(255, 255, 255, 0.2);
   --hover-gradient: linear-gradient(
     90deg,
-    rgba(36, 44, 88, 0.11),
-    rgba(0, 98, 255, 0.11)
+    rgba(25, 40, 90, 0.1),  
+    rgba(20, 30, 80, 0.1)   
   );
   --radial-hover-gradient: radial-gradient(
     circle,
-    rgba(0, 98, 255, 0.11) 0%,
-    rgba(25, 25, 35, 0.11) 100%
+    rgba(25, 40, 90, 0.1) 0%,      
+    rgba(16, 16, 22, 0.1) 100%      
   );
+
   --button-radial-hover-gradient: radial-gradient(
     circle,
-    rgba(0, 98, 255, 0.11) 0%,
-    rgba(36, 44, 88, 0.11) 100%
+    rgba(25, 40, 90, 0.1) 0%,      
+    rgba(20, 30, 80, 0.1) 100%     
   );
+
   --header-hover-gradient: radial-gradient(
     circle,
-    rgba(2, 49, 124, 0.11) 0%,
-    rgba(36, 44, 88, 0.11) 60%
+    rgba(20, 30, 80, 0.1) 0%,      
+    rgba(16, 16, 22, 0.1) 60%      
   );
+
   --footer-hover-gradient: radial-gradient(
     circle,
-    rgba(3, 64, 163, 0.11) 0%,
-    rgba(36, 44, 88, 0.11) 100%
+    rgba(22, 35, 85, 0.1) 0%,    
+    rgba(18, 28, 75, 0.1) 100%   
   );
 
   --editor-bg: rgba(30, 30, 30, 0.8);
@@ -165,7 +168,6 @@ html {
 @media (max-width: 768px) {
   body {
     padding: 112px 0px 0px 0px;
-    background-attachment: scroll;
   }
 
   .hero-section,

@@ -157,3 +157,9 @@ if (monthsOfExperience < 12) {
 document.getElementById('experience').textContent = experienceText;
 
 
+// Fix for mobile viewport height issues
+window.addEventListener('resize', () => {
+  document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+});
+// Initial call
+document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);

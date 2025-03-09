@@ -1,11 +1,17 @@
-body {
-  color: var(--title-color);
+html {
+  height: -webkit-fill-available;
   background: var(--background-img);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100dvh;
+}
+
+body {
+  color: var(--title-color);
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: -webkit-fill-available;
   margin: 0;
   min-width: 320px;
   -webkit-tap-highlight-color: var(--tap-highlight-color);

@@ -25,17 +25,26 @@ const theme = {
   btnIcon: document.getElementById("theme_btn_icon"),
   logo: document.getElementById("logo"),
   logoEnlarged: document.getElementById("logo_enlarged"),
+  themeColorMeta: document.getElementById("theme-color-meta"),
   
   toggle() {
     const isLight = document.body.classList.toggle("light-theme");
     this.updateUI(isLight);
     localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    this.updateThemeColor();
   },
 
   updateUI(isLight) {
     this.logo.src = `logo/logo-${isLight ? 'black' : 'white'}.svg`;
     this.logoEnlarged.src = `logo/logo-${isLight ? 'black' : 'white'}-outline.svg`;
     this.btnIcon.textContent = `${isLight ? 'dark' : 'light'}_mode`;
+    this.updateThemeColor();
+  },
+
+  updateThemeColor() {
+    const isLightTheme = document.body.classList.contains('light-theme');
+    const backgroundColor = isLightTheme ? 'rgb(216, 216, 230)' : 'rgb(18, 18, 28)';
+    this.themeColorMeta.setAttribute('content', backgroundColor);
   },
 
   init() {
@@ -46,6 +55,7 @@ const theme = {
     isLight && document.body.classList.add('light-theme');
     this.updateUI(isLight);
     this.btn.onclick = () => this.toggle();
+    this.updateThemeColor();
   }
 };
 

@@ -31,7 +31,7 @@ html {
 }
 
 :root {
-  --background-color: rgb(18, 18, 18);
+  --background-color: rgb(18, 18, 28);
   --border-color: rgb(39, 39, 39);
   --button-background-color: rgb(26, 26, 28);
   --title-color: rgb(255, 255, 255);
@@ -93,7 +93,7 @@ html {
 }
 
 .light-theme {
-  --background-color: rgb(248, 248, 248);
+  --background-color: rgb(216, 216, 230);
   --border-color: rgb(158, 158, 182);
   --button-background-color: rgb(230, 230, 240);
   --title-color: rgb(38, 38, 38);

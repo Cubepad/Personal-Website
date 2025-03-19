@@ -43,7 +43,7 @@ const theme = {
 
   updateThemeColor() {
     const isLightTheme = document.body.classList.contains('light-theme');
-    const backgroundColor = isLightTheme ? 'rgb(216, 216, 230)' : 'rgb(18, 18, 28)';
+    const backgroundColor = isLightTheme ? 'rgb(210, 210, 230)' : 'rgb(12, 12, 22)';
     this.themeColorMeta.setAttribute('content', backgroundColor);
   },
 

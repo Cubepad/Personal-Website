@@ -50,31 +50,37 @@ html {
   --tap-highlight-color: rgba(255, 255, 255, 0.2);
   --hover-gradient: linear-gradient(
     90deg,
-    rgba(25, 40, 90, 0.1),  
-    rgba(20, 30, 80, 0.1)   
+    rgba(25, 40, 90, 0.1),
+    rgba(20, 30, 80, 0.1)
   );
   --radial-hover-gradient: radial-gradient(
-    circle,
-    rgba(25, 40, 90, 0.1) 0%,      
-    rgba(16, 16, 22, 0.1) 100%      
+    --button-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) ;
+      --button-hover-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15),
+    0 12px 24px rgba(0, 0, 0, 0.1) ; --card-box-shadow: 0 1px 2px
+      rgba(0, 0, 0, 0.04),
+    0 4px 8px rgba(0, 0, 0, 0.04) ; --card-hover-box-shadow: 0 2px 4px
+      rgba(0, 0, 0, 0.1),
+    0 6px 12px rgba(0, 0, 0, 0.08) ; circle,
+    rgba(25, 40, 90, 0.1) 0%,
+    rgba(16, 16, 22, 0.1) 100%
   );
 
   --button-radial-hover-gradient: radial-gradient(
     circle,
-    rgba(25, 40, 90, 0.1) 0%,      
-    rgba(20, 30, 80, 0.1) 100%     
+    rgba(25, 40, 90, 0.1) 0%,
+    rgba(20, 30, 80, 0.1) 100%
   );
 
   --header-hover-gradient: radial-gradient(
     circle,
-    rgba(20, 30, 80, 0.1) 0%,      
-    rgba(16, 16, 22, 0.1) 60%      
+    rgba(20, 30, 80, 0.1) 0%,
+    rgba(16, 16, 22, 0.1) 60%
   );
 
   --footer-hover-gradient: radial-gradient(
     circle,
-    rgba(22, 35, 85, 0.1) 0%,    
-    rgba(18, 28, 75, 0.1) 100%   
+    rgba(22, 35, 85, 0.1) 0%,
+    rgba(18, 28, 75, 0.1) 100%
   );
 
   --editor-bg: rgba(30, 30, 30, 0.8);
@@ -83,13 +89,14 @@ html {
   --editor-header-border: rgba(255, 255, 255, 0.1);
   --window-title-color: #888;
   --editor-text-color: #d4d4d4;
-  --keyword-color: #569CD6;
-  --string-color: #CE9178;
-  --function-color: #DCDCAA;
-  --variable-color: #9CDCFE;
-  --control-red: #FF5F56;
-  --control-yellow: #FFBD2E;
-  --control-green: #27C93F;
+  --keyword-color: #569cd6;
+  --string-color: #ce9178;
+  --function-color: #dcdcaa;
+  --variable-color: #9cdcfe;
+  --control-red: #ff5f56;
+  --control-yellow: #ffbd2e;
+  --control-green: #27c93f;
+  --card-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .light-theme {
@@ -136,19 +143,26 @@ html {
     rgba(192, 200, 240, 0.2) 100%
   );
 
+  --button-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --button-hover-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15),
+    0 12px 24px rgba(0, 0, 0, 0.1);
+  --card-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04),
+    0 4px 8px rgba(0, 0, 0, 0.04);
+  --card-hover-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 6px 12px rgba(0, 0, 0, 0.08);
   --editor-bg: rgba(255, 255, 255, 0.85); /* Brighter and less gray */
   --editor-border: rgba(0, 0, 0, 0.08); /* Softer border */
   --editor-header-bg: rgba(240, 240, 240, 0.9); /* Slightly lighter */
   --editor-header-border: rgba(0, 0, 0, 0.08); /* Less intense border */
   --window-title-color: #444; /* Darker for better contrast */
   --editor-text-color: #222; /* Slightly darker for readability */
-  --keyword-color: #1E40AF; /* Deep blue for emphasis */
-  --string-color: #B63E0E; /* Warmer, more readable red */
-  --function-color: #8B5A2B; /* Richer brown for functions */
-  --variable-color: #0056B3; /* More vibrant blue */
-  --control-red: #FF5F56;
-  --control-yellow: #FFBD2E;
-  --control-green: #27C93F;
+  --keyword-color: #1e40af; /* Deep blue for emphasis */
+  --string-color: #b63e0e; /* Warmer, more readable red */
+  --function-color: #8b5a2b; /* Richer brown for functions */
+  --variable-color: #0056b3; /* More vibrant blue */
+  --control-red: #ff5f56;
+  --control-yellow: #ffbd2e;
+  --control-green: #27c93f;
 }
 
 .hidden {
@@ -309,4 +323,32 @@ p {
 
 a {
   text-decoration: none;
+}
+/* Card Styles with Box-Shadow */
+.skill-card,
+.project-card,
+.editor,
+.service-card,
+footer,
+header {
+  box-shadow: var(--card-box-shadow);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Button boxshadows */
+.visit-button,
+.cta-button,
+.hero-button,
+.message-button,
+.email {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: var(--button-box-shadow);
+}
+
+.visit-button:hover,
+.cta-button:hover,
+.hero-button:hover,
+.message-button:hover,
+.email:hover {
+  box-shadow: var(--button-hover-box-shadow);
 }

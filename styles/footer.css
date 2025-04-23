@@ -54,7 +54,7 @@ footer > * {
   border-radius: 1.25rem;
   border: 1px var(--border-color) solid;
   transition: transform 0.3s cubic-bezier(0.2, 2, 0.3, 1.8),
-    background-color 0.3s ease, color 0.3s ease;
+    background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -83,10 +83,7 @@ footer > * {
   transform: scale(0.95);
 }
 
-.email:active span,
-.message-button:active span {
-  transform: scale(0.9);
-}
+
 
 .connect h3 {
   margin: 0.25rem 0rem;
@@ -127,6 +124,11 @@ footer > * {
     color: var(--title-color);
     background-color: var(--button-hover);
     transform: translateY(-4px);
+  }
+
+  .email:active,
+  .message-button:active {
+    transform: scale(0.99);
   }
 
   .social-icon:hover {

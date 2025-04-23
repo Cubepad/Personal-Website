@@ -176,6 +176,10 @@
     align-items: center;
   }
 
+  .hero-button:active {
+    transform: scale(0.95);
+  }
+
   .hero-text {
     display: flex;
     flex-direction: column;

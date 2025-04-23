@@ -13,25 +13,36 @@
   align-items: center;
   justify-content: space-between;
   z-index: 100;
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
   background-color: var(--header-background-color);
   transition: max-width 0.5s cubic-bezier(0.34, 1.45, 0.64, 1);
   user-select: none;
 }
 
 .header::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: inherit; 
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  z-index: -1;
+}
+
+.header::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--header-hover-gradient); /* Radial gradient */
-  border-radius: inherit; /* Match the header's border-radius */
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.5s ease; /* Smooth transition for gradient */
-  z-index: -1; /* Place behind the content */
+  background: var(--header-hover-gradient); 
+  border-radius: inherit; 
+  opacity: 0; 
+  transition: opacity 0.5s ease; 
+  z-index: -2; 
 }
 
 .logo {
@@ -137,8 +148,8 @@
 }
 
 @media (min-width: 769px) {
-  .header:hover::before {
-    opacity: 1; /* Show the gradient on hover */
+  .header:hover::after {
+    opacity: 1; 
   }
 
   .theme-button:hover {
@@ -166,18 +177,18 @@
     height: 101%;
     border-radius: inherit;
     background: var(--button-radial-hover-gradient); 
-    transform: translate(-50%, -50%) scale(0); /* Centered and initially hidden */
-    z-index: -1; /* Place behind content and border */
+    transform: translate(-50%, -50%) scale(0); 
+    z-index: -1; 
   }
   
   .dropdown-content a:hover:before {
-    transform: translate(-50%, -50%) scale(1); /* Expand gradient */
+    transform: translate(-50%, -50%) scale(1);
   }
   
   .dropdown-content a:hover {
-    color: var(--title-color); /* Optional: Change text color on hover */
-    transform: scale(1.05); /* Slight scaling for interaction */
-    border: 1px var(--border-color) solid; /* Ensure border transitions smoothly */
+    color: var(--title-color); 
+    transform: scale(1.05); 
+    border: 1px var(--border-color) solid; 
     transition: transform 0.4s cubic-bezier(0.4, 1.8, 0.5, 1);
     background: var(--button-background-color);
     box-shadow: var(--button-box-shadow);
@@ -239,7 +250,7 @@
     opacity: 0;
     transform: translateY(-10px);
     position: absolute;
-    background-color: var(--button-background-color);
+    background-color: var(--header-background-color);
     z-index: 1;
     right: 0;
     top: 4.5rem;
@@ -252,6 +263,19 @@
     flex-direction: column;
     gap: 0.375rem;
     box-shadow: var(--card-box-shadow);
+  }
+  
+  .dropdown-content::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    z-index: -1;
   }
 
   .dropdown-content a {

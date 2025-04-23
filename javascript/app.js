@@ -22,7 +22,8 @@ hiddenElements.forEach((el) => observer.observe(el));
 // Dark and Light Theme
 const theme = {
   btn: document.getElementById("theme_btn"),
-  btnIcon: document.getElementById("theme_btn_icon"),
+  moonIcon: document.getElementById("moon_icon"),
+  sunIcon: document.getElementById("sun_icon"),
   logo: document.getElementById("logo"),
   logoEnlarged: document.getElementById("logo_enlarged"),
   themeColorMeta: document.getElementById("theme-color-meta"),
@@ -33,25 +34,27 @@ const theme = {
     localStorage.setItem('theme', isLight ? 'light' : 'dark');
     this.updateThemeColor();
   },
-
+  
   updateUI(isLight) {
     this.logo.src = `logo/logo-${isLight ? 'black' : 'white'}.svg`;
     this.logoEnlarged.src = `logo/logo-${isLight ? 'black' : 'white'}-outline.svg`;
-    this.btnIcon.textContent = `${isLight ? 'dark' : 'light'}_mode`;
+    
+    // Toggle icon visibility based on theme
+    this.moonIcon.style.display = isLight ? 'block' : 'none';
+    this.sunIcon.style.display = isLight ? 'none' : 'block';
+    
     this.updateThemeColor();
   },
-
+  
   updateThemeColor() {
     const isLightTheme = document.body.classList.contains('light-theme');
     const backgroundColor = isLightTheme ? 'rgb(195, 202, 236)' : 'rgb(8, 8, 16)';
     this.themeColorMeta.setAttribute('content', backgroundColor);
   },
-
+  
   init() {
     const stored = localStorage.getItem('theme');
-    const isLight = stored ? stored === 'light' 
-                  : !matchMedia('(prefers-color-scheme: dark)').matches;
-    
+    const isLight = stored ? stored === 'light' : !matchMedia('(prefers-color-scheme: dark)').matches;
     isLight && document.body.classList.add('light-theme');
     this.updateUI(isLight);
     this.btn.onclick = () => this.toggle();
@@ -65,22 +68,29 @@ document.addEventListener('DOMContentLoaded', () => theme.init());
 document.addEventListener('DOMContentLoaded', () => {
   const menuBtn = document.querySelector('.menu-button');
   const dropdownContent = document.querySelector('.dropdown-content');
-  
+  const hamburgerIcon = document.getElementById('hamburger_icon');
+  const closeIcon = document.getElementById('close_icon');
+ 
   const toggleMenu = () => {
-    dropdownContent.classList.toggle('active');
-      menuBtn.querySelector('.menu-icon').textContent = 
-      dropdownContent.classList.contains('active') ? 'close' : 'menu';
+    const isActive = dropdownContent.classList.toggle('active');
+    
+    // Toggle icon visibility
+    hamburgerIcon.style.display = isActive ? 'none' : 'block';
+    closeIcon.style.display = isActive ? 'block' : 'none';
   };
-
-  menuBtn.addEventListener('click', toggleMenu);
   
+  menuBtn.addEventListener('click', toggleMenu);
+ 
   // Close menu when clicking outside or on a link
   document.addEventListener('click', (e) => {
-      if (!menuBtn.contains(e.target) && !dropdownContent.contains(e.target) ||
-          e.target.closest('a')) {
-          dropdownContent.classList.remove('active');
-          menuBtn.querySelector('.menu-icon').textContent = 'menu';
-      }
+    if (!menuBtn.contains(e.target) && !dropdownContent.contains(e.target) ||
+        e.target.closest('a')) {
+      dropdownContent.classList.remove('active');
+      
+      // Reset to hamburger icon
+      hamburgerIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    }
   });
 });
 

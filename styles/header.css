@@ -81,6 +81,10 @@
   cursor: pointer;
   display: none;
   -webkit-tap-highlight-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
 }
 
 .menu-button:hover .menu-icon:active {
@@ -124,7 +128,7 @@
   box-shadow: var(--button-box-shadow);}
 
 .theme-icon {
-  font-size: 1.5rem;
+  font-size: 0;
   color: var(--button-text-color);
   transition: color 0.3s, transform 0.15s;
 }
@@ -204,6 +208,9 @@
 
   .logo-container:hover {
     transform: rotate(360deg);
+  }
+  .menu-button {
+    display: none;
   }
 }
 

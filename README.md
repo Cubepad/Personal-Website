@@ -20,7 +20,7 @@ A modern, responsive portfolio website built to showcase my projects and profess
 - HTML5
 - CSS3 (With CSS Variables)
 - Vanilla JavaScript
-- Google Material Symbols
+- Tabler Icons
 - SVG Graphics
 - Geist Font Family
 
@@ -89,13 +89,13 @@ Update the content in `index.html` to add your personal information, projects, a
 
 ## 🔮 Future Enhancements
 
-- [ ] Add project showcase section
+- [✅] Add project showcase section
 - [ ] Implement contact form functionality
-- [ ] Enhance animations & UI
+- [✅] Enhance animations & UI
 
 ## 📄 License
 
-Copyright © 2024 David Olaniyan. All rights reserved.
+Copyright © 2025 David Olaniyan. All rights reserved.
 
 ## 📬 Contact
 

@@ -103,23 +103,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        const id = entry.target.getAttribute('id');
+        const id = entry.target.id;
         const link = document.querySelector(`.dropdown-content a[href="#${id}"]`);
 
-        if (entry.isIntersecting) {
-          navLinks.forEach((navLink) => navLink.classList.remove('active'));
+        if (entry.isIntersecting && link) {
+          // remove .active from all
+          navLinks.forEach((a) => a.classList.remove('active'));
+          // add it only if we found the link
           link.classList.add('active');
         }
       });
     },
-    {
-      root: null, // Viewport as the container
-      threshold: 0.5, // Trigger when 50% of the section is visible
-    }
+    { root: null, threshold: 0.5 }
   );
 
   sections.forEach((section) => observer.observe(section));
 });
+
 
 
 document.addEventListener('DOMContentLoaded', () => {

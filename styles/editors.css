@@ -142,10 +142,8 @@
     gap: 1rem;
   }
   .editor--back-left,
-  .editor--main,
   .editor--back-right {
-    left: 50%;
-    transform: translateX(-50%) translateY(0) scale(0.95) rotate(0);
+    display: none;
   }
   .editor--main {
     transform: translateX(-50%) translateY(0) scale(1);

@@ -1,30 +1,28 @@
-
-
-/* Updated Code Editor CSS Using the Variables */
 .code-editors {
   position: relative;
+  width: 100%;
+  height: 380px;            /* same as editor height */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   text-align: left;
 }
 
 .editor {
-  width: 100%;
+  position: absolute;
+  width: clamp(300px, 80%, 550px);
   height: 380px;
   background: var(--header-background-color);
   border-radius: 1.25rem;
   overflow: hidden;
   backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid var(--border-color);
-  position: relative;
-  z-index: 2;
-  transition: transform 0.3s cubic-bezier(0.2, 2.0, 0.3, 1.8);
+  transition: transform 0.4s cubic-bezier(0.2,2,0.3,1);
 }
 
 .editor:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px) scale(1.02);
 }
 
 .editor::after {
@@ -39,15 +37,15 @@
 }
 
 .editor:hover::after {
-  opacity: 1;
+  opacity: 0.75;
 }
 
 .editor-header {
-  height: 40px;
+  height: 48px;  
   background: var(--button-background-color);
   display: flex;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 1.5rem;
   justify-content: space-between;
   border-bottom: 1px solid var(--editor-header-border);
 }
@@ -57,39 +55,99 @@
   gap: 8px;
 }
 
-.window-title {
-  color: var(--window-title-color);
-  font-size: 13px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-}
-
 .control {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   transition: all 0.3s ease;
 }
 
-.control.red { background: var(--control-red); }
-.control.yellow { background: var(--control-yellow); }
+.control.red   { background: var(--control-red);   }
+.control.yellow{ background: var(--control-yellow);}
 .control.green { background: var(--control-green); }
+
+.window-title {
+  color: var(--window-title-color);
+  font-size: clamp(12px, 1vw, 14px);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
 
 .editor-content {
   padding: 1.5rem;
   color: var(--editor-text-color);
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  font-size: 16px;
+  font-size: clamp(14px, 1.25vw, 18px);
   line-height: 1.6;
 }
 
-.keyword { color: var(--keyword-color); }
-.string { color: var(--string-color); }
+.keyword  { color: var(--keyword-color);  }
+.string   { color: var(--string-color);   }
 .function { color: var(--function-color); }
 .variable { color: var(--variable-color); }
-
 
 @media (max-width: 768px) {
   .editor {
     width: 90%;
+  }
+}
+
+/* — keep your current desktop defaults — */
+.editor--main {
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%) translateY(0) scale(1);
+}
+
+.editor--back-left {
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-65%) translateY(10px) rotate(-2deg) scale(0.95);
+}
+
+.editor--back-right {
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-35%) translateY(10px) rotate(2deg) scale(0.95);
+}
+
+/* — hover states (unchanged) — */
+.code-editors:hover .editor--main {
+  transform: translateX(-50%) translateY(-8px) scale(1.02);
+}
+.code-editors:hover .editor--back-left {
+  transform: translateX(-75%) translateY(0) rotate(-4deg) scale(0.9);
+}
+.code-editors:hover .editor--back-right {
+  transform: translateX(-25%) translateY(0) rotate(4deg) scale(0.9);
+}
+
+/* — tablet: tighten the spread a bit — */
+@media (max-width: 1024px) {
+  .editor--back-left {
+    transform: translateX(-55%) translateY(8px) rotate(-2deg) scale(0.95);
+  }
+  .editor--back-right {
+    transform: translateX(-45%) translateY(8px) rotate(2deg) scale(0.95);
+  }
+}
+
+/* — mobile: stack them centered — */
+@media (max-width: 768px) {
+  .editor {
+    height: 350px; 
+  }
+
+  .code-editors {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .editor--back-left,
+  .editor--main,
+  .editor--back-right {
+    left: 50%;
+    transform: translateX(-50%) translateY(0) scale(0.95) rotate(0);
+  }
+  .editor--main {
+    transform: translateX(-50%) translateY(0) scale(1);
   }
 }

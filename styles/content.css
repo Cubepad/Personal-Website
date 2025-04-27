@@ -6,27 +6,21 @@
 
 .hero-section {
   border-radius: 20px;
-  padding: 4rem 0rem 16rem;
+  padding: 4rem 0rem 8rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  max-width: 1200px;
   place-self: center;
 }
 
 .hero-text {
   flex: 1;
-}
-
-.hero-text h1::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  background-color: var(--title-color);
-  margin-top: 0.5rem;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-section h2 {
@@ -169,7 +163,7 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 0rem 0rem 16rem;
+    padding: 0rem 0rem 12rem;
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -185,10 +179,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .hero-text h1::after {
-    margin: 0.5rem auto 0 auto;
   }
 
   .hero-image-container {
@@ -404,7 +394,7 @@
   }
 
   .hero-section h2 {
-    font-size: 1.875rem;
+    font-size: 2.25rem;
     max-width: 38ch;
   }
 
@@ -506,7 +496,7 @@
   }
 
   .hero-section h2 {
-    font-size: 2.375rem;
+    font-size: 2.5rem;
     max-width: 38ch;
   }
 

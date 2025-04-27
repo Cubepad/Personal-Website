@@ -113,7 +113,7 @@
       <section id="home" class="hero-section hidden">
         <div class="hero-text">
           <h1>
-            Hi, my name is David Olaniyan
+            David Olaniyan
           </h1>
           <h2>
             I turn ideas into websites, one line of code at a time
@@ -122,33 +122,82 @@
             Contact Now
           </a>
         </div>
-          <div class="hero-image-container">
-            <div class="code-editors">
-              <div class="editor">
-                <div class="editor-header">
-                  <div class="window-controls">
-                    <div class="control red"></div>
-                    <div class="control yellow"></div>
-                    <div class="control green"></div>
-                  </div>
-                  <div class="window-title">portfolio.tsx</div>
+        <div class="hero-image-container">
+          <div class="code-editors">
+            <!-- Back‐left card -->
+            <div class="editor editor--back-left">
+              <div class="editor-header">
+                <div class="window-controls">
+                  <div class="control red"></div>
+                  <div class="control yellow"></div>
+                  <div class="control green"></div>
                 </div>
-                <div class="editor-content">
-                  <span class="keyword">const</span> <span class="function">Portfolio</span> = () => {<br>
-                  &nbsp;&nbsp;<span class="keyword">const</span> <span class="variable">passion</span> = <span class="string">"web development"</span>;<br>
-                  &nbsp;&nbsp;<span class="keyword">const</span> <span class="variable">focus</span> = <span class="string">"clean & intuitive design"</span>;<br>
-                  &nbsp;&nbsp;<span class="keyword">return</span> (<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="keyword">div</span>&gt;<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating the future<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Turning visions into reality<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="keyword">div</span>&gt;<br>
-                  &nbsp;&nbsp;);<br>
-                  };
+                <div class="window-title">projects.tsx</div>
+              </div>
+              <div class="editor-content">
+                <span class="keyword">const</span> <span class="function">ProjectCard</span> = ({ <span class="variable">project</span> }) => {<br>
+                &nbsp;&nbsp;<span class="keyword">const</span> { <span class="variable">title</span>, <span class="variable">tech</span>, <span class="variable">description</span> } = <span class="variable">project</span>;<br>
+                &nbsp;&nbsp;<span class="keyword">return</span> (<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="keyword">div</span> <span class="attribute">className</span>=<span class="string">"project-item"</span>&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="keyword">h3</span>&gt;{<span class="variable">title</span>}&lt;/<span class="keyword">h3</span>&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="keyword">p</span>&gt;{<span class="variable">description</span>}&lt;/<span class="keyword">p</span>&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="keyword">div</span> <span class="attribute">className</span>=<span class="string">"tech-stack"</span>&gt;{<span class="variable">tech</span>}&lt;/<span class="keyword">div</span>&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="keyword">div</span>&gt;<br>
+                &nbsp;&nbsp;);<br>
+                };
+              </div>
+            </div>
+          
+            <!-- Main card -->
+            <div class="editor editor--main">
+              <div class="editor-header">
+                <div class="window-controls">
+                  <div class="control red"></div>
+                  <div class="control yellow"></div>
+                  <div class="control green"></div>
                 </div>
+                <div class="window-title">portfolio.tsx</div>
+              </div>
+              <div class="editor-content">
+                <span class="keyword">const</span> <span class="function">Portfolio</span> = () => {<br>
+                &nbsp;&nbsp;<span class="keyword">const</span> <span class="variable">passion</span> = <span class="string">"web development"</span>;<br>
+                &nbsp;&nbsp;<span class="keyword">const</span> <span class="variable">focus</span> = <span class="string">"clean & intuitive design"</span>;<br>
+                &nbsp;&nbsp;<span class="keyword">return</span> (<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="keyword">div</span>&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating the future<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Turning visions into reality<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="keyword">div</span>&gt;<br>
+                &nbsp;&nbsp;);<br>
+                };
+              </div>
+            </div>
+          
+            <!-- Back‐right card -->
+            <div class="editor editor--back-right">
+              <div class="editor-header">
+                <div class="window-controls">
+                  <div class="control red"></div>
+                  <div class="control yellow"></div>
+                  <div class="control green"></div>
                 </div>
+                <div class="window-title">skills.tsx</div>
+              </div>
+              <div class="editor-content">
+                <span class="keyword">const</span> <span class="function">Skills</span> = () => {<br>
+                &nbsp;&nbsp;<span class="keyword">const</span> <span class="variable">frontend</span> = [<span class="string">"React"</span>, <span class="string">"TypeScript"</span>, <span class="string">"CSS"</span>];<br>
+                &nbsp;&nbsp;<span class="keyword">const</span> <span class="variable">design</span> = [<span class="string">"Figma"</span>, <span class="string">"Illustrator"</span>];<br>
+                &nbsp;&nbsp;<span class="keyword">return</span> (<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="keyword">section</span>&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="keyword">h2</span>&gt;Technical Expertise&lt;/<span class="keyword">h2</span>&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="keyword">SkillList</span> <span class="attribute">items</span>={<span class="variable">frontend</span>} /&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="keyword">section</span>&gt;<br>
+                &nbsp;&nbsp;);<br>
+                };
               </div>
             </div>
           </div>
+        </div>
+        
       </section>
       <section id="about-me" class="about-me hidden">
           <h3 class="subheading">

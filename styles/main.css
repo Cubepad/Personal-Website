@@ -203,7 +203,7 @@ html {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
@@ -222,8 +222,10 @@ html {
   }
 
   h1 {
-    font-size: 3.75rem;
+    font-size: 5rem;
   }
+   
+
 }
 
 @media (min-width: 1025px) {
@@ -241,7 +243,7 @@ html {
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 6.5rem;
   }
 }
 
@@ -260,7 +262,7 @@ html {
   }
 
   h1 {
-    font-size: 4.5rem;
+    font-size: 9rem;
   }
 }
 
@@ -279,7 +281,7 @@ html {
   }
 
   h1 {
-    font-size: 84px;
+    font-size: 9.5rem;
   }
 }
 
@@ -295,11 +297,15 @@ p {
 }
 
 h1 {
-  margin-bottom: 2rem;
   line-height: 1.3;
+  text-transform: uppercase;
 }
 
-h1,
+h1 {
+  letter-spacing: -0.03em;
+}
+
+
 h2 {
   letter-spacing: -0.0375em;
 }

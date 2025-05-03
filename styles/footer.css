@@ -50,7 +50,7 @@ footer > * {
 
 .message-button,
 .email {
-  background-color: var(--button-background-color);
+  background: var(--button-background-color);
   border-radius: 1.25rem;
   border: 1px var(--border-color) solid;
   transition: transform 0.3s cubic-bezier(0.2, 2, 0.3, 1.8),
@@ -78,7 +78,7 @@ footer > * {
 
 .email:active,
 .message-button:active {
-  background-color: var(--button-hover);
+  background: var(--button-hover);
   color: var(--title-color);
   transform: scale(0.95);
 }

@@ -43,38 +43,46 @@ html {
       transparent 50%
     ),
     rgb(8, 9, 12);
-  --border-color: rgb(39, 39, 39);
-  --button-background-color: rgb(26, 26, 28);
+  --border-color: rgba(255, 255, 255, 0.07);
+  --button-background-color: linear-gradient(
+    0.07383128568086761deg,
+    rgba(0, 85, 255, 0.08) 0%,
+    rgba(153, 153, 170, 0.1) 100%
+  );
   --title-color: rgb(255, 255, 255);
   --text-color: rgba(255, 255, 255, 0.6);
   --button-text-color: rgba(255, 255, 255, 0.6);
-  --button-hover: rgb(30, 30, 32);
-  --header-background-color: rgba(18, 18, 18, 0.7);
+  --button-hover: linear-gradient(
+    0.0738deg,
+    rgba(0, 85, 255, 0.15) 0%,
+    rgba(153, 153, 170, 0.18) 100%
+  );
+  --header-background-color: rgba(14, 14, 16, 0.7);
   --blur-button-background-color: rgb(35, 35, 35, 0.2);
   --social-icon-color: rgb(131, 131, 131);
   --header-height: 90px;
   --tap-highlight-color: rgba(255, 255, 255, 0.2);
   --hover-gradient: linear-gradient(
     90deg,
-    rgba(25, 40, 90, 0.1),
-    rgba(20, 30, 80, 0.1)
+    rgba(0, 12, 51, 0.25) 0%,
+    rgba(0, 12, 51, 0.2) 100%
   );
   --radial-hover-gradient: radial-gradient(
-    --button-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) ;
-      --button-hover-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15),
-    0 12px 24px rgba(0, 0, 0, 0.1) ; --card-box-shadow: 0 1px 2px
-      rgba(0, 0, 0, 0.04),
-    0 4px 8px rgba(0, 0, 0, 0.04) ; --card-hover-box-shadow: 0 2px 4px
-      rgba(0, 0, 0, 0.1),
-    0 6px 12px rgba(0, 0, 0, 0.08) ; circle,
-    rgba(25, 40, 90, 0.1) 0%,
-    rgba(16, 16, 22, 0.1) 100%
+    circle,
+    rgba(0, 12, 51, 0.3) 0%,
+    transparent 100%
   );
-
+  --button-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --button-hover-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15),
+    0 12px 24px rgba(0, 0, 0, 0.1);
+  --card-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04),
+    0 4px 8px rgba(0, 0, 0, 0.04);
+  --card-hover-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 6px 12px rgba(0, 0, 0, 0.08);
   --button-radial-hover-gradient: radial-gradient(
     circle,
-    rgba(25, 40, 90, 0.1) 0%,
-    rgba(20, 30, 80, 0.1) 100%
+    rgba(0, 12, 51, 0.35) 0%,
+    transparent 100%
   );
 
   --header-hover-gradient: radial-gradient(
@@ -85,8 +93,8 @@ html {
 
   --footer-hover-gradient: radial-gradient(
     circle,
-    rgba(22, 35, 85, 0.1) 0%,
-    rgba(18, 28, 75, 0.1) 100%
+    rgba(0, 12, 51, 0.35) 0%,
+    transparent 100%
   );
 
   --editor-bg: rgba(30, 30, 30, 0.8);
@@ -118,12 +126,20 @@ html {
       transparent 60%
     ),
     rgb(212, 214, 230);
-  --border-color: rgb(158, 158, 182);
-  --button-background-color: rgb(230, 230, 240);
+  --border-color: rgba(140, 140, 182, 0.75);
+  --button-background-color:  linear-gradient(
+    0.07deg,
+    rgba(180, 200, 255, 0.15) 0%,
+    rgba(245, 248, 255, 0.35) 100%
+  );
   --title-color: rgb(38, 38, 38);
   --text-color: rgba(0, 0, 0, 0.85);
   --button-text-color: rgba(0, 0, 0, 0.75);
-  --button-hover: rgb(245, 245, 255);
+  --button-hover: linear-gradient(
+    0.07deg,
+    rgba(200, 215, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
   --header-background-color: rgba(211, 210, 210, 0.5);
   --blur-button-background-color: rgb(211, 210, 210, 0.2);
   --social-icon-color: rgb(64, 64, 64);

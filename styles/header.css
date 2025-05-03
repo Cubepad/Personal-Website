@@ -115,7 +115,7 @@
 }
 
 .theme-button {
-  background-color: var(--button-background-color);
+  background: var(--button-background-color);
   border-radius: 1rem;
   border: 1px var(--border-color) solid;
   transition: background-color 0.3s;
@@ -134,7 +134,7 @@
 }
 
 .theme-button:active {
-  background-color: var(--button-hover);
+  background: var(--button-hover);
 }
 
 .theme-button:active .theme-icon {
@@ -157,7 +157,7 @@
   }
 
   .theme-button:hover {
-    background-color: var(--button-hover);
+    background: var(--button-hover);
   }
 
   .theme-button:hover .theme-icon {
@@ -165,7 +165,7 @@
   }
 
   .dropdown-content a.active {
-    background-color: var(--button-hover);
+    background: var(--button-hover);
     border: 1px var(--border-color) solid;
     box-shadow: var(--button-box-shadow);
     color: var(--title-color); 
@@ -242,7 +242,7 @@
   }
 
   .right-section {
-    background-color: var(--button-background-color);
+    background: var(--button-background-color);
     border: 1px var(--border-color) solid;
     border-radius: 1rem;
     box-shadow: var(--button-box-shadow);

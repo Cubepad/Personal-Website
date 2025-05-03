@@ -21,46 +21,66 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // Dark and Light Theme
 const theme = {
-  btn: document.getElementById("theme_btn"),
-  moonIcon: document.getElementById("moon_icon"),
-  sunIcon: document.getElementById("sun_icon"),
-  logo: document.getElementById("logo"),
-  logoEnlarged: document.getElementById("logo_enlarged"),
-  themeColorMeta: document.getElementById("theme-color-meta"),
-  
+  btn:            null,
+  moonIcon:       null,
+  sunIcon:        null,
+  logo:           null,
+  logoEnlarged:   null,
+  themeColorMeta: null,
+
   toggle() {
     const isLight = document.body.classList.toggle("light-theme");
     this.updateUI(isLight);
-    localStorage.setItem('theme', isLight ? 'light' : 'dark');
-    this.updateThemeColor();
+    localStorage.setItem("theme", isLight ? "light" : "dark");
   },
-  
+
   updateUI(isLight) {
-    this.logo.src = `logo/logo-${isLight ? 'black' : 'white'}.svg`;
-    this.logoEnlarged.src = `logo/logo-${isLight ? 'black' : 'white'}-outline.svg`;
-    
-    // Toggle icon visibility based on theme
-    this.moonIcon.style.display = isLight ? 'block' : 'none';
-    this.sunIcon.style.display = isLight ? 'none' : 'block';
-    
-    this.updateThemeColor();
+    // only swap logo if it exists
+    if (this.logo) {
+      this.logo.src = `logo/logo-${isLight ? "black" : "white"}.svg`;
+    }
+    if (this.logoEnlarged) {
+      this.logoEnlarged.src = `logo/logo-${isLight ? "black" : "white"}-outline.svg`;
+    }
+
+    // toggle icons
+    if (this.moonIcon) this.moonIcon.style.display = isLight ? "block" : "none";
+    if (this.sunIcon)  this.sunIcon.style.display  = isLight ? "none"  : "block";
+
+    if (this.themeColorMeta) {
+      const bg = isLight ? "rgb(195, 202, 236)" : "rgb(8, 8, 16)";
+      this.themeColorMeta.setAttribute("content", bg);
+    }
   },
-  
-  updateThemeColor() {
-    const isLightTheme = document.body.classList.contains('light-theme');
-    const backgroundColor = isLightTheme ? 'rgb(195, 202, 236)' : 'rgb(8, 8, 16)';
-    this.themeColorMeta.setAttribute('content', backgroundColor);
-  },
-  
+
   init() {
-    const stored = localStorage.getItem('theme');
-    const isLight = stored ? stored === 'light' : !matchMedia('(prefers-color-scheme: dark)').matches;
-    isLight && document.body.classList.add('light-theme');
-    this.updateUI(isLight);
-    this.btn.onclick = () => this.toggle();
-    this.updateThemeColor();
+    // grab everything *after* DOM is ready
+    document.addEventListener("DOMContentLoaded", () => {
+      this.btn            = document.getElementById("theme_btn");
+      this.moonIcon       = document.getElementById("moon_icon");
+      this.sunIcon        = document.getElementById("sun_icon");
+      this.logo           = document.getElementById("logo");
+      this.logoEnlarged   = document.getElementById("logo_enlarged");
+      this.themeColorMeta = document.getElementById("theme-color-meta");
+
+      // read stored or system preference
+      const stored = localStorage.getItem("theme");
+      const isLight = stored
+        ? stored === "light"
+        : !matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (isLight) document.body.classList.add("light-theme");
+      this.updateUI(isLight);
+
+      // only hook up the button if it actually exists
+      if (this.btn) this.btn.addEventListener("click", () => this.toggle());
+    });
   }
 };
+
+// kick it off
+theme.init();
+
 
 document.addEventListener('DOMContentLoaded', () => theme.init());
 

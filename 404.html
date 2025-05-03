@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- *** Updated Title for 404 page *** -->
+    <title>
+      Page Not Found (404) - David Olaniyan
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="" id="theme-color-meta">
+    <!-- *** Updated Description for 404 page *** -->
+    <meta name="description" content="Oops! The page you were looking for on David Olaniyan's Portfolio Website could not be found.">
+    <meta name="author" content="David Olaniyan">
+    <!-- *** Noindex for 404 page *** -->
+    <meta name="robots" content="noindex">
+    <meta property="og:title" content="Page Not Found (404) - David Olaniyan">
+    <meta property="og:description" content="Oops! The page you were looking for on David Olaniyan's Portfolio Website could not be found.">
+    <meta property="og:url" content="https://davidolaniyan.pages.dev/404.html"> <!-- Adjust if needed -->
+    <meta property="og:image" content="https://davidolaniyan.pages.dev/logo/favicon/favicon-512.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Page Not Found (404) - David Olaniyan">
+    <meta name="twitter:description" content="Oops! The page you were looking for on David Olaniyan's Portfolio Website could not be found.">
+    <meta name="twitter:image" content="https://davidolaniyan.pages.dev/logo/favicon/favicon-512.png">
+
+    <!-- *** Assume 404.html is in the root, same as index.html. Adjust paths if needed. *** -->
+    <link rel="canonical" href="https://davidolaniyan.pages.dev/"> <!-- Canonical still points to home -->
+    <link id="favicon16" rel="icon" type="image/png" sizes="16x16" href="/logo/favicon/favicon-16.png">
+    <link id="favicon32" rel="icon" type="image/png" sizes="32x32" href="/logo/favicon/favicon-32.png">
+    <link id="favicon96" rel="icon" type="image/png" sizes="96x96" href="/logo/favicon/favicon-96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo/favicon/apple-touch-icon.png">
+    <meta name="google-site-verification" content="i3AQ5Ys6S2q_TkXfFPFsYN4aE5THuWp8R6Bpihj9tpg" />
+    <link rel="manifest" href="/manifest.webmanifest">
+
+    <!-- *** Link all the same stylesheets *** -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/font.css">
+    <link rel="stylesheet" href="styles/projects.css"> <!-- Keep even if not directly used, might have shared styles -->
+    <link rel="stylesheet" href="styles/skills.css">   <!-- Keep even if not directly used -->
+    <link rel="stylesheet" href="styles/services.css"> <!-- Keep even if not directly used -->
+    <link rel="stylesheet" href="styles/editors.css"> <!-- Keep even if not directly used -->
+
+    <!-- *** Add specific styles for the 404 content *** -->
+    <style>
+      .not-found-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: calc(100vh - var(--header-height) - 250px); /* Adjust 250px based on your actual footer height */
+        padding: 8rem 2rem 6rem;
+        color: var(--text-color); /* Use text color for paragraph */
+      }
+      .not-found-section h1 {
+        font-size: 16rem; /* Make 404 large */
+        color: var(--title-color); /* Use title color */
+        margin-bottom: 0;
+        line-height: 1;
+        font-weight: 600;
+        letter-spacing:normal;/
+      }
+      .not-found-section h2 {
+         font-size: 4em;
+         font-weight: 600;
+         color: var(--title-color);
+         margin-top: 10px;
+         margin-bottom: 20px;
+      }
+      .not-found-section p {
+        font-size: 1.75rem;
+        margin-bottom: 30px;
+        max-width: 50ch;
+      }
+      /* Re-use the cta-button style from projects.css if available, or define a similar one */
+      .back-home-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 24px;
+        background-color: var(--button-background-color);
+        color: var(--button-text-color);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        box-shadow: var(--button-box-shadow); /* Use button shadow */
+      }
+      .back-home-button:hover {
+        background-color: var(--button-hover);
+        background-image: var(--button-radial-hover-gradient);
+        transform: translateY(-2px);
+        box-shadow: var(--button-hover-box-shadow); /* Use button hover shadow */
+      }
+       .back-home-button svg {
+         width: 20px;
+         height: 20px;
+       }
+
+      /* Responsive font sizes for 404 */
+       @media (max-width: 768px) {
+         .not-found-section h1 {
+           font-size: 9rem;
+         }
+         .not-found-section h2 {
+           font-size: 2rem;
+         }
+       }
+    </style>
+
+    <!-- *** Link the same scripts *** -->
+    <script defer src="javascript/app.js"></script>
+    <script src="javascript/theme-favicon.js"></script>
+  </head>
+  <body>
+    <!-- *** Reuse the exact same header *** -->
+    <header class="header">
+      <div class="left-section">
+        <a href="/">
+          <div class="logo-container">
+            <img class="logo theme-image" src="logo/logo-black.svg" alt="An abstract letter D Logo which represents the D in David" id="logo">
+          </div>
+        </a>
+      </div>
+      <nav class="center-section">
+        <div class="dropdown-content">
+          <a href="#about-me">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+            About Me
+          </a>
+          <a href="#skills">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-bulb"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg>
+            Skills
+          </a>
+          <a href="#projects">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-folders"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 3h3l2 2h5a2 2 0 0 1 2 2v7a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" /><path d="M17 16v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2h2" /></svg>
+            Projects
+          </a>
+          <a href="#services">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-heart-handshake"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /><path d="M12 6l-3.293 3.293a1 1 0 0 0 0 1.414l.543 .543c.69 .69 1.81 .69 2.5 0l1 -1a3.182 3.182 0 0 1 4.5 0l2.25 2.25" /><path d="M12.5 15.5l2 2" /><path d="M15 13l2 2" /></svg>
+            Services
+          </a>
+          <a href="#contact">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-address-book"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z" /><path d="M10 16h6" /><path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 8h3" /><path d="M4 12h3" /><path d="M4 16h3" /></svg>
+            Contact
+          </a>
+        </div>
+      </nav>
+      <div class="right-section">
+        <button class="theme-button" id="theme_btn" aria-label="Toggle theme">
+          <div id="moon_icon" class="theme-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-moon">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+            </svg>
+          </div>
+          <div id="sun_icon" class="theme-icon" style="display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-sun">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+              <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+            </svg>
+          </div>
+        </button>
+        <button class="menu-button" aria-label="Toggle menu">
+          <div id="hamburger_icon" class="menu-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M4 6l16 0" />
+              <path d="M4 12l16 0" />
+              <path d="M4 18l16 0" />
+            </svg>
+          </div>
+          <div id="close_icon" class="menu-icon" style="display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M18 6l-12 12" />
+              <path d="M6 6l12 12" />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </header>
+
+    <!-- *** Replace the main content with 404 message *** -->
+    <main class="content">
+      <section class="not-found-section hidden"> <!-- Add hidden for fade-in effect -->
+          <h1>404</h1>
+          <h2>Page Not Found</h2>
+          <a href="/" class="cta-button">
+            Go Back Home
+             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
+          </a>
+      </section>
+    </main>
+
+    <!-- *** Reuse the exact same footer *** -->
+    <footer class="hidden" id="contact"> <!-- Keep hidden class for consistency -->
+      <section class="info">
+        <div class="message-container">
+          <h2 class="message-text">
+            <span>Want to Partner Up?</span>
+            Reach Me with a Click
+          </h2>
+          <a class="message-button"href="tel:+4551460043">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
+            +45 51 46 00 43
+          </a>
+        </div>
+        <hr>
+        <div class="connect">
+          <h3>
+            Connect
+          </h3>
+          <div class="connect-section">
+            <a id="copyEmailButton" class="email" href="mailto:davideniola108@gmail.com">
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+                <h4>
+                  davideniola108@gmail.com
+                </h4>
+            </a>
+            <section class="social-section">
+              <a href="https://github.com/Cubepad" target="about_blank" aria-label="Visit my GitHub profile">
+                <svg  xmlns="http://www.w3.org/2000/svg" class="social-icon"  width="32"  height="32"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+              </a>
+              <a href="#" target="about_blank" aria-label="Visit my LinkedIn profile">
+                <svg  xmlns="http://www.w3.org/2000/svg" class="social-icon"  width="32"  height="32"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>
+              </a>
+              <a href="#" aria-label="Here is my Resume">
+                <svg  xmlns="http://www.w3.org/2000/svg" class="social-icon"  width="32"  height="32"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-text"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M9 9l1 0" /><path d="M9 13l6 0" /><path d="M9 17l6 0" /></svg>
+              </a>
+            </section>
+          </div>
+        </div>
+        <p>
+          Copyright © <span id="year"></span> David Olaniyan. All rights reserved.
+        <p>
+      </section>
+    </footer>
+  </body>
+</html>

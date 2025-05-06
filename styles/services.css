@@ -14,7 +14,7 @@
   background: var(--blur-button-background-color);
   border: 1px solid var(--border-color);
   border-radius: 1.75rem;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 2.5rem;
   flex-wrap: wrap;
   max-width: 400px;
   text-align: center;
@@ -39,12 +39,23 @@
 .service-icon {
   margin-bottom: 1.5rem;
   color: var(--title-color);
+  background: var(--button-background-color);
+  border-radius: 3rem;
+  padding: 1rem;
+  border: 1px var(--border-color) solid;
+  box-shadow: var(--button-box-shadow);
+  transition: transform 0.3s cubic-bezier(0.2, 2, 0.3, 1.8), box-shadow 0.3s ease;
+}
+
+.service-icon svg {
+  display: block;
 }
 
 .service-title {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
   color: var(--title-color);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .service-description {
@@ -71,5 +82,7 @@
   
   .service-card:hover .service-icon {
     transform: scale(1.05);
+    background: var(--button-hover);
+    box-shadow: var(--button-box-shadow);
   }
 }

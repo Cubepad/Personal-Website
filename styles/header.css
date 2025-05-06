@@ -118,7 +118,7 @@
   background: var(--button-background-color);
   border-radius: 1rem;
   border: 1px var(--border-color) solid;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -158,6 +158,7 @@
 
   .theme-button:hover {
     background: var(--button-hover);
+    box-shadow: var(--button-hover-box-shadow);
   }
 
   .theme-button:hover .theme-icon {

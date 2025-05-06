@@ -95,7 +95,7 @@
 .about-me-text-div div,
 .about-me-text p,
 .img-container {
-  border-radius: 20px;
+  border-radius: 1.25rem;
   padding: 0.75rem 1rem;
   transition: all 0.3s;
 }
@@ -210,7 +210,6 @@
   }
 
   .img-container {
-    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -247,7 +246,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     flex: 1;
     gap: 0.5rem;
     padding: 0.75rem 0.5rem;
@@ -285,7 +284,6 @@
   }
 
   .img-container {
-    border-radius: 20px;
     display: flex;
     align-items: center;
     padding: 2rem;
@@ -351,7 +349,6 @@
   }
 
   .img-container {
-    border-radius: 20px;
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -390,7 +387,7 @@
   .projects .subheading,
   .skills .subheading,
   .services .subheading {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .hero-section h2 {
@@ -410,7 +407,6 @@
     max-width: 40%;
   }
 
-  .projects p,
   .about-me-text p {
     font-size: 1.125rem;
   }
@@ -475,7 +471,7 @@
   .projects .subheading,
   .skills .subheading,
   .services .subheading {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   .about-me-text-div div {

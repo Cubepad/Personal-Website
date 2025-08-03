@@ -251,6 +251,7 @@
 
   .theme-button {
     border: none;
+    background: transparent;
   }
 
   .dropdown-content {

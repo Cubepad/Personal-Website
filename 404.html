@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- *** Updated Title for 404 page *** -->
     <title>Page Not Found (404) - David Olaniyan</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="" id="theme-color-meta" />
-    <!-- *** Updated Description for 404 page *** -->
     <meta
       name="description"
       content="Oops! The page you were looking for on David Olaniyan's Portfolio Website could not be found."
     />
     <meta name="author" content="David Olaniyan" />
-    <!-- *** Noindex for 404 page *** -->
     <meta name="robots" content="noindex" />
     <meta property="og:title" content="Page Not Found (404) - David Olaniyan" />
     <meta
@@ -20,7 +17,6 @@
       content="Oops! The page you were looking for on David Olaniyan's Portfolio Website could not be found."
     />
     <meta property="og:url" content="https://davidolaniyan.com/404.html" />
-    <!-- Adjust if needed -->
     <meta
       property="og:image"
       content="https://davidolaniyan.com/logo/favicon/favicon-512.png"
@@ -40,9 +36,7 @@
       content="https://davidolaniyan.com/logo/favicon/favicon-512.png"
     />
 
-    <!-- *** Assume 404.html is in the root, same as index.html. Adjust paths if needed. *** -->
     <link rel="canonical" href="https://davidolaniyan.com/" />
-    <!-- Canonical still points to home -->
     <link
       id="favicon16"
       rel="icon"
@@ -81,9 +75,8 @@
     <link rel="stylesheet" href="styles/content.css" />
     <link rel="stylesheet" href="styles/font.css" />
     <link rel="stylesheet" href="styles/projects.css" />
-    <!-- Keep even if not directly used, might have shared styles -->
 
-    <!-- *** Add specific styles for the 404 content *** -->
+
     <style>
       .not-found-section {
         display: flex;
@@ -91,13 +84,13 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        min-height: calc(100vh - var(--header-height) - 250px); /* Adjust 250px based on your actual footer height */
+        min-height: calc(100vh - var(--header-height) - 250px); 
         padding: 8rem 2rem 6rem;
-        color: var(--text-color); /* Use text color for paragraph */
+        color: var(--text-color);
       }
       .not-found-section h1 {
-        font-size: 16rem; /* Make 404 large */
-        color: var(--title-color); /* Use title color */
+        font-size: 16rem; 
+        color: var(--title-color); 
         margin-bottom: 0;
         line-height: 1;
         font-weight: 600;
@@ -115,7 +108,6 @@
         margin-bottom: 30px;
         max-width: 50ch;
       }
-      /* Re-use the cta-button style from projects.css if available, or define a similar one */
       .back-home-button {
         display: inline-flex;
         align-items: center;
@@ -128,20 +120,19 @@
         font-weight: 500;
         text-decoration: none;
         transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-        box-shadow: var(--button-box-shadow); /* Use button shadow */
+        box-shadow: var(--button-box-shadow);
       }
       .back-home-button:hover {
         background-color: var(--button-hover);
         background-image: var(--button-radial-hover-gradient);
         transform: translateY(-2px);
-        box-shadow: var(--button-hover-box-shadow); /* Use button hover shadow */
+        box-shadow: var(--button-hover-box-shadow);
       }
        .back-home-button svg {
          width: 20px;
          height: 20px;
        }
 
-      /* Responsive font sizes for 404 */
        @media (max-width: 768px) {
          .not-found-section h1 {
            font-size: 9rem;
@@ -152,12 +143,10 @@
        }
     </style>
 
-    <!-- *** Link the same scripts *** -->
     <script defer src="javascript/app.js"></script>
     <script src="javascript/theme-favicon.js"></script>
   </head>
   <body>
-    <!-- *** Reuse the exact same header *** -->
     <header class="header">
       <div class="left-section">
         <a href="/">
@@ -373,10 +362,8 @@
       </div>
     </header>
 
-    <!-- *** Replace the main content with 404 message *** -->
     <main class="content">
       <section class="not-found-section hidden">
-        <!-- Add hidden for fade-in effect -->
         <h1>404</h1>
         <h2>Page Not Found</h2>
         <a href="/" class="cta-button">
@@ -402,9 +389,9 @@
       </section>
     </main>
 
-    <!-- *** Reuse the exact same footer *** -->
+
     <footer class="hidden" id="contact">
-      <!-- Keep hidden class for consistency -->
+
       <section class="info">
         <div class="message-container">
           <h2 class="message-text">

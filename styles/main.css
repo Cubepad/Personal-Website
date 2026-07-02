@@ -311,6 +311,10 @@ html {
   }
 }
 
+button {
+  cursor: pointer;
+}
+
 h1,
 h2,
 h3,
@@ -354,6 +358,7 @@ a {
 /* Card Styles with Box-Shadow */
 .skill-card,
 .project-card,
+.arduino-project-card,
 .editor,
 .service-card,
 footer,
@@ -362,8 +367,9 @@ header {
   transition: box-shadow 0.3s ease-in-out;
 }
 
-/* Button boxshadows */
+/* Button box-shadows */
 .visit-button,
+.details-button,
 .cta-button,
 .hero-button,
 .message-button,
@@ -373,6 +379,7 @@ header {
 }
 
 .visit-button:hover,
+.details-button:hover,
 .cta-button:hover,
 .hero-button:hover,
 .message-button:hover,

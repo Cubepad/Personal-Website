@@ -1,11 +1,17 @@
-.projects-grid {
+.projects-grid, .arduino-projects-grid {
   max-width: 1280px;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
-.project-card {
+.arduino-projects-grid {
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);;
+}
+
+.project-card, .arduino-project-card {
   position: relative;
   display: flex;
   flex-direction: row-reverse;
@@ -18,7 +24,12 @@
   overflow: hidden;
 }
 
-.project-card::before {
+.arduino-project-card {
+  flex-direction: column;
+}
+
+.project-card::before,
+.arduino-project-card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -32,7 +43,11 @@
   z-index: 0; 
 }
 
-.project-card > * {
+.arduino-project-card::before {
+  background: var(--radial-hover-gradient); 
+}
+
+.project-card, .arduino-project-card > * {
   position: relative;
   z-index: 1; 
 }
@@ -108,7 +123,8 @@
   font-size: 0.875rem;
 }
 
-.visit-button {
+.visit-button, .details-button {
+  font-size: 1rem;
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
@@ -125,21 +141,21 @@
   position: relative;
 }
 
-.visit-button svg {
+.visit-button svg, .details-button svg {
   transition: transform 0.3s cubic-bezier(0.2, 2, 0.3, 1.8);
   transform: translateX(0);
 }
 
-.visit-button:hover {
+.visit-button:hover, .details-button:hover {
   transform: translateY(-3px);
   background-color: var(--button-hover);
 }
 
-.visit-button:hover svg {
+.visit-button:hover svg, .details-button:hover svg {
   transform: translateX(5px);
 }
 
-.visit-button:active {
+.visit-button:active, .details-button:active {
   color: var(--title-color);
   transform: translateY(0);
 }
@@ -180,8 +196,12 @@
 
 
 @media (max-width: 768px) {
-  .projects-grid {
+  .projects-grid, .arduino-projects-grid {
     padding: 0 1rem;
+  }
+
+  .arduino-projects-grid {
+    grid-template-columns: 1fr;
   }
 
   .project-card {
@@ -197,7 +217,7 @@
     filter: grayscale(0%);
   }
 
-  .visit-button:active {
+  .visit-button:active, .details-button:active {
     transform: scale(0.95);
   }
 
@@ -212,18 +232,179 @@
   }
 
   .project-card:hover::before,
+  .arduino-project-card:hover::before,
   .visit-button:hover::before {
     opacity: 1; 
   }
 
   
-  .visit-button:hover {
+  .visit-button:hover, .details-button:hover {
     color: var(--title-color);
   }
 }
 
 @media (min-width: 1921px) {
-  .projects-grid {
+  .projects-grid, .arduino-projects-grid {
     max-width: 1280px;
+  }
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1;
+  padding: 1.5rem;
+  pointer-events: none;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.modal.active {
+  pointer-events: auto;
+  backdrop-filter: blur(2px) saturate(75%);
+}
+
+.modal-content {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  overflow-y: auto;
+  padding: 0.75rem;
+  background: var(--background-img);
+  border: 1px solid var(--border-color);
+  border-radius: 1.75rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.35s cubic-bezier(0.2, 2.0, 0.3, 1.8),
+              opacity 0.25s ease;
+}
+
+
+.modal.active .modal-content {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  background: var(--button-background-color);
+  color: var(--button-text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.7s cubic-bezier(0.3, 1.5, 0.7, 1),
+              background-color 0.3s ease;
+              
+}
+
+.modal-close:hover {
+  background-color: var(--button-hover);
+  transform: rotate(90deg);
+}
+
+.modal-gallery {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.gallery-main-image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery-prev,
+.gallery-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: var(--button-background-color);
+  color: var(--button-text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.2, 2, 0.3, 1.8),
+              background-color 0.3s ease;
+}
+
+.gallery-prev { left: 0.75rem; }
+.gallery-next { right: 0.75rem; }
+
+.gallery-prev:hover,
+.gallery-next:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.gallery-thumbnails {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding-bottom: 0.25rem;
+}
+
+.gallery-thumbnails img {
+  flex: 0 0 auto;
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 0.65rem;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  opacity: 0.5;
+  filter: grayscale(60%);
+  transition: opacity 0.3s ease, filter 0.3s ease, transform 0.3s ease;
+  box-shadow: var(--button-box-shadow);
+}
+
+.gallery-thumbnails img:hover {
+  opacity: 0.85;
+}
+
+.gallery-thumbnails img.active {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: translateY(-2px);
+  box-shadow: var(--button-hover-box-shadow);
+}
+
+.modal-title {
+  margin-top: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--title-color);
+}
+
+.modal-description {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  text-wrap: pretty;
+}
+
+@media (max-width: 768px) {
+  .gallery-main-image {
+    height: 220px;
   }
 }

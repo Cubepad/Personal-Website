@@ -2,31 +2,42 @@
 // data-project="key" attribute on a details-button.
 const projectsData = {
   "arduino-1": {
-    title: "Arduino Project 1",
+    title: "Coin Collecting Game",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc nisl aliquam.",
-    images: ["/images/pureride.webp", "/images/cubepad.webp"],
+    images: ["/images/pureride.webp", "/images/cubepad.webp", "/images/cubepad.webp", "/images/cubepad.webp"],
   },
 };
 
 const modal = document.getElementById("project-modal");
 const modalImage = modal.querySelector(".gallery-main-image");
-const modalThumbs = modal.querySelector(".gallery-thumbnails");
 const modalTitle = modal.querySelector(".modal-title");
 const modalDesc = modal.querySelector(".modal-description");
 const prevBtn = modal.querySelector(".gallery-prev");
 const nextBtn = modal.querySelector(".gallery-next");
 const closeBtn = modal.querySelector(".modal-close");
+const modalDots = modal.querySelector(".gallery-dots");
+
 
 let currentImages = [];
 let currentIndex = 0;
+let transitionTimeout = null;
+
 
 function showImage(index) {
   currentIndex = (index + currentImages.length) % currentImages.length;
-  modalImage.src = currentImages[currentIndex];
-  modalImage.alt = `${modalTitle.textContent} - image ${currentIndex + 1}`;
-  modalThumbs.querySelectorAll("img").forEach((thumb, i) => {
-    thumb.classList.toggle("active", i === currentIndex);
+
+  modalImage.classList.add("is-changing");
+
+  clearTimeout(transitionTimeout);
+  transitionTimeout = setTimeout(() => {
+    modalImage.src = currentImages[currentIndex];
+    modalImage.alt = `${modalTitle.textContent} - image ${currentIndex + 1}`;
+    modalImage.classList.remove("is-changing");
+  }, 200);
+
+  modalDots.querySelectorAll(".dot").forEach((dot, i) => {
+    dot.classList.toggle("active", i === currentIndex);
   });
 }
 
@@ -38,20 +49,19 @@ function openModal(projectId) {
   modalTitle.textContent = project.title;
   modalDesc.textContent = project.description;
 
-  modalThumbs.innerHTML = "";
-  currentImages.forEach((src, i) => {
-    const thumb = document.createElement("img");
-    thumb.src = src;
-    thumb.alt = `Thumbnail ${i + 1}`;
-    thumb.addEventListener("click", () => showImage(i));
-    modalThumbs.appendChild(thumb);
+  modalDots.innerHTML = "";
+  currentImages.forEach((_, i) => {
+    const dot = document.createElement("button");
+    dot.type = "button";
+    dot.className = "dot";
+    dot.setAttribute("aria-label", `Go to image ${i + 1}`);
+    dot.addEventListener("click", () => showImage(i));
+    modalDots.appendChild(dot);
   });
 
   showImage(0);
 
   modal.classList.remove("hidden");
-  // Force a reflow so the browser registers "hidden" removal
-  // before "active" is added, so the transition actually plays.
   void modal.offsetWidth;
   modal.classList.add("active");
 }

@@ -252,6 +252,7 @@
   position: fixed;
   inset: 0;
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0);
@@ -290,8 +291,8 @@
 
 .modal-close {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 1.25rem;
+  right: 1.25rem;
   z-index: 2;
   width: 2.25rem;
   height: 2.25rem;
@@ -300,14 +301,15 @@
   justify-content: center;
   font-size: 1.5rem;
   line-height: 1;
-  background: var(--button-background-color);
+  background: var(--background-img);
   color: var(--button-text-color);
   border: 1px solid var(--border-color);
-  border-radius: 50%;
+  border-radius: 0.8rem;
+  box-shadow: var(--button-box-shadow);
   cursor: pointer;
   transition: transform 0.7s cubic-bezier(0.3, 1.5, 0.7, 1),
               background-color 0.3s ease;
-              
+  backdrop-filter: saturate(500%);              
 }
 
 .modal-close:hover {
@@ -326,13 +328,20 @@
   display: block;
   width: 100%;
   object-fit: cover;
+  border-radius: 1rem;
+}
+
+.gallery-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+  margin: 1rem auto 0.5rem;
 }
 
 .gallery-prev,
 .gallery-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   padding: 0.5rem;
   display: inline-flex;
   align-items: center;
@@ -341,19 +350,28 @@
   background: var(--button-background-color);
   color: var(--button-text-color);
   border: 1px solid var(--border-color);
-  border-radius: 50%;
+  border-radius: 1rem;
+  box-shadow: var(--button-box-shadow);
   cursor: pointer;
-  transition: transform 0.3s cubic-bezier(0.2, 2, 0.3, 1.8),
-              background-color 0.3s ease;
+  transition: background-color 0.3s, box-shadow 0.3s ease;
 }
 
-.gallery-prev { left: 0.75rem; }
-.gallery-next { right: 0.75rem; }
+.gallery-prev svg, .gallery-next svg {
+  transition: transform 0.3s cubic-bezier(0.2, 2, 0.3, 1.8);
+}
 
 .gallery-prev:hover,
 .gallery-next:hover {
   background-color: var(--button-hover);
-  transform: translateY(-50%) scale(1.1);
+  box-shadow: var(--button-hover-box-shadow);
+}
+
+.gallery-prev:hover svg {
+  transform: translateX(-3px);
+}
+
+.gallery-next:hover svg {
+  transform: translateX(3px);
 }
 
 .gallery-thumbnails {
@@ -388,8 +406,68 @@
   box-shadow: var(--button-hover-box-shadow);
 }
 
+.gallery-main-image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  transition:
+        opacity 0.25s ease,
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.35s ease;
+}
+
+.gallery-main-image.is-changing {
+    opacity: 0;
+    transform: translateX(1rem);
+    filter: blur(2px);
+}
+
+.gallery-dots {
+  transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 1rem 1.5rem;
+  background: var(--button-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+  width: fit-content;
+  box-shadow: var(--button-box-shadow);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-dots:hover {
+  background: var(--button-hover);
+  box-shadow: var(--button-hover-box-shadow);
+}
+
+.gallery-dots .dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--text-color);
+  opacity: 0.4;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: width 0.3s cubic-bezier(0.2, 2, 0.3, 1.8),
+              opacity 0.3s ease,
+              background-color 0.3s ease;
+}
+
+.gallery-dots .dot:hover {
+  opacity: 0.7;
+}
+
+.gallery-dots .dot.active {
+  width: 1.75rem; /* the "stretched pill" effect */
+  opacity: 1;
+  background: var(--title-color);
+}
+
 .modal-title {
-  margin-top: 1.25rem;
+  margin-top: 0;
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--title-color);
